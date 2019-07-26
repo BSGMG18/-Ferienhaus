@@ -1,0 +1,287 @@
+#myhtml, #mybody{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+h1, h2, h3 {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+section{
+    min-height: 100%;
+}
+
+
+/***************************************************/
+
+/*div.nav-wrapper{
+    height: 85px;
+}*/
+
+nav{
+    position: fixed;
+    background-color: #03a9f4;
+}
+
+a.brand-logo{
+    padding: 0;
+    margin: 0;
+}
+
+#logo{
+    margin-top: 7%;
+}
+
+#logo:hover{
+    opacity: 0.8;
+    padding: 5px 0px 0px 0px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  nav li a{
+    position: relative;
+    font-size: 3vh;
+  }
+  
+  nav li a:after{
+    content: '';
+    position: absolute;
+    width: 0; height: 3px;
+    display: block;
+    margin-top: -4px;
+    right: 0;
+    background: #fff;
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
+  }
+   
+  nav li a:hover:after{
+    width: 100%;
+    left: 0;
+    background: #fff;
+  }
+
+
+/* FIXED BUTTONs *******************************************/
+
+  .phone {
+    background-color : #039be5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border-color: #039be5;
+  }
+  
+  #mybutton1 {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+  }
+
+  #mybutton1:hover{
+    opacity: 0.8;
+    padding-bottom: 10px;
+  }
+  
+  button.whatsapp{
+    background-color : #009688;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border-color: #009688;
+    width: 67.2px;
+  }
+
+  #mybutton2 {
+    position: fixed;
+    bottom: 20px;
+    right: 85px;
+    z-index: 1;
+    width: 77.2px;
+  }
+
+  #mybutton2:hover{
+    opacity: 0.8;
+    padding-bottom: 10px;
+  }
+
+  .email {
+    background-color : #ef6771;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border-color: #ef6771;
+  }
+  
+  #mybutton3 {
+    position: fixed;
+    bottom: 20px;
+    right: 170px;
+    z-index: 1;
+  }
+
+  #mybutton3:hover{
+    opacity: 0.8;
+    padding-bottom: 10px;
+  }
+
+
+/* START *******************************************/
+
+#start{
+    background-image: url('../img/202.svg');
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+}
+
+#start #outerDiv{
+    width: 100%;
+}
+
+#start h1{
+    font-size: 7.5vh;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px black;
+}
+
+#start h2{
+    font-size: 4vh;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px black;
+}
+
+#start hr{
+    color: white;
+    width: 70%;
+}
+
+
+/* DAS HAUS *******************************************/
+
+#dasHaus #fullWidthDiv{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 4vh 0 0 0;
+}
+
+#pictureDiv{
+  margin-top: 10vh;
+}
+
+#cardDiv, #pictureDiv{
+    height: 100vh;
+}
+
+#cardDiv2{
+    padding-top:0;
+    margin-top:-10vh;
+}
+
+#dasHaus li.li-left{
+    font-size: 18px;
+    list-style-type: circle;
+    text-align: left;
+}
+
+#dasHaus li.li-right{
+    padding: 45px 0 0 0;
+    margin: 0 -20px 0 0;
+    font-size: 14px;
+    text-align: right;
+}
+
+#dasHaus hr{
+    color: #ffeccc;
+}
+
+
+
+/* PREIS *******************************************/
+
+/* #preis{
+  background-color: rgba(230, 244, 241, 0.5);
+  text-align: center;
+} 
+ */
+
+/* KONTAKT *******************************************/
+
+#kontakt{
+    /*  background-color: rgba(230, 244, 241, 0.5);*/
+    text-align: center;
+} 
+
+#hideElement{
+  margin:0;
+  padding:0;
+} 
+
+#kontakt h1{
+  font-size: 7.5vh;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px black;
+}
+
+#kontakt h2{
+  font-size: 4vh;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px black;
+}
+/* 
+#mybutton1.hide {
+  display: none;
+}
+
+#mybutton2.hide {
+  display: none;
+}
+
+#mybutton3.hide {
+  display: none;
+} */
+
+#mybutton11:hover{
+  opacity: 0.8;
+  padding-right: 10px;
+}
+
+#mybutton21:hover{
+  opacity: 0.8;
+  padding-right: 10px;
+}
+
+#mybutton31:hover{
+  opacity: 0.8;
+  padding-right: 10px;
+}
+
+.button-margin{
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+}
+
+
+
+/* FOOTER *******************************************/
+
+.page-footer{
+    background-color: #03a9f4;
+}
+
+#fullWidthDivFooter{
+    width: 100%;
+}
