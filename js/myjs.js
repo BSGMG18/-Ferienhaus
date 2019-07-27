@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   $(document).ready(function() {
     var $window = $(window);
-    var x = $("#mybutton11").position();
+    var x = $("#emailBackground").position();
     var mybutton1_bottom = x.top;
     console.log("MyButtonPosition " + mybutton1_bottom);
     $window.on('scroll', function() {
@@ -67,8 +67,8 @@ document.addEventListener('DOMContentLoaded', function() {
     */
    function initClient() {
      gapi.client.init({
-       apiKey: API_KEY,
-       clientId: CLIENT_ID,
+       apiKey: rf8aD48IOGWTDAnol3se8w2A,
+       clientId: 753026082277-arjv95b9a3p2dsfojkukoravbhvf31gg.apps.googleusercontent.com,
        discoveryDocs: DISCOVERY_DOCS,
        scope: SCOPES
      }).then(function () {
@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Initialize and add the map
 function initMap() {
     // The location of Uluru
-    var uluru = {lat: -25.344, lng: 131.036};
+    var uluru = {lat: 25.344, lng: 131.036};
     // The map, centered at Uluru
     var map = new google.maps.Map(
         document.getElementById('map'), {zoom: 4, center: uluru});
