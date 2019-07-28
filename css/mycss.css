@@ -14,6 +14,15 @@ section{
     min-height: 100%;
 }
 
+.outerDiv{
+  width: 100%;
+}
+
+.myRow{
+  margin: 0;
+  padding: 0;
+}
+
 
 /***************************************************/
 
@@ -47,7 +56,8 @@ a{
   
   nav li a{
     position: relative;
-    font-size: 3vh;
+    font-size: 1.8em;
+    font-family: 'Roboto', sans-serif;
   }
   
   nav li a:after{
@@ -137,28 +147,26 @@ a{
 /* START *******************************************/
 
 #start{
-    background-image: url('../img/202.svg');
+    background-image: url('../img/202-min.jpeg');
     background-position: center center;
     background-size: cover;
     text-align: center;
 }
 
-#start #outerDiv{
-    width: 100%;
-}
-
 #start h1{
-    font-size: 7.5vh;
+    font-size: 5em;
     color: white;
     font-weight: bold;
     text-shadow: 2px 2px 8px black;
+    font-family: 'Roboto', sans-serif;
 }
 
 #start h2{
-    font-size: 4vh;
+    font-size: 3em;
     color: white;
     font-weight: bold;
     text-shadow: 2px 2px 8px black;
+    font-family: 'Roboto', sans-serif;
 }
 
 #start hr{
@@ -169,48 +177,34 @@ a{
 
 /* DAS HAUS *******************************************/
 
-#dasHaus #fullWidthDiv{
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 8vh 0 0 0;
-}
-
-#pictureDiv{
-  margin-top: 10vh;
-}
-
-#cardDiv, #pictureDiv{
-    height: 100vh;
-}
-
 #cardDiv{
-  padding:0;
+  padding:0 0 50px 0;
   margin:0;
+  height: 100vh;
+  overflow: auto;
 }
 
-#cardDiv2{
-    padding-top:0;
-    margin-top:-10vh;
+div#cardDivText.container{
+  font-size: 1.6em;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  overflow-wrap: break-word;
+
 }
 
-#dasHaus li.li-left{
-    font-size: 18px;
-    list-style-type: circle;
-    text-align: left;
+#sliderDiv{
+  height: 100vh;
 }
 
-#dasHaus li.li-right{
-    padding: 45px 0 0 0;
-    margin: 0 -20px 0 0;
-    font-size: 14px;
-    text-align: right;
+#innerSliderDiv{
+  width: 100%;
 }
+
+
 
 #dasHaus hr{
     color: #ffeccc;
 }
-
 
 
 /* PREIS *******************************************/
@@ -218,7 +212,13 @@ a{
 #preis{
   background-color: rgba(230, 244, 241, 0.5);
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size:1.6em;
 } 
+
+.highlight{
+  background-color: #ffd740;
+}
 
 
 /* KONTAKT *******************************************/
@@ -247,18 +247,6 @@ a{
   font-weight: bold;
   text-shadow: 2px 2px 8px black;
 }
-/* 
-#mybutton1.hide {
-  display: none;
-}
-
-#mybutton2.hide {
-  display: none;
-}
-
-#mybutton3.hide {
-  display: none;
-} */
 
 #mybutton11:hover{
   opacity: 0.8;
@@ -281,42 +269,20 @@ a{
 }
 
 #emailBackground{
-  background-image: url('../img/email.svg');
-  background-position: center center;
-  background-size: cover;
-  text-align: center;
-  height: 50%;
-  opacity: 0.5;
-}
-
-#whatsAppBackground{
-  background-image: url('../img/whatsapp-logo.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
+  background-image: url('../img/email-min.jpeg');
+  background-position: bottom;
   background-size: contain;
-  text-align: center;
-  height: 50%;
+  background-repeat: no-repeat;
+  height: 50vh;
   opacity: 0.5;
 }
-
-#phoneBackground{
-  background-image: url('../img/telephone.svg');
-  background-position: center center;
-  background-size: cover;
-  text-align: center;
-  height: 50%;
-  width: 80%;
-  opacity: 0.5;
-}
-
-
-
-
 
 /* FOOTER *******************************************/
 
 .page-footer{
     background-color: #03a9f4;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
 }
 
 #fullWidthDivFooter{
