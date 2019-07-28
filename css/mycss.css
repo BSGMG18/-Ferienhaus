@@ -26,10 +26,6 @@ section{
 
 /***************************************************/
 
-/*div.nav-wrapper{
-    height: 85px;
-}*/
-
 nav{
     position: fixed;
     background-color: #03a9f4;
@@ -78,6 +74,17 @@ a{
     background: #fff;
   }
 
+  #mobile-demo a{
+    font-size: 1.8em;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  @media only screen and (max-width: 600px){
+    nav{
+      height: 65px;
+    }
+  } 
+  
 
 /* FIXED BUTTONs *******************************************/
 
@@ -91,7 +98,7 @@ a{
   
   #mybutton1 {
     position: fixed;
-    bottom: 20px;
+    bottom: 10px;
     right: 20px;
     z-index: 1;
   }
@@ -112,7 +119,7 @@ a{
 
   #mybutton2 {
     position: fixed;
-    bottom: 20px;
+    bottom: 10px;
     right: 85px;
     z-index: 1;
     width: 77.2px;
@@ -133,7 +140,7 @@ a{
   
   #mybutton3 {
     position: fixed;
-    bottom: 20px;
+    bottom: 10px;
     right: 170px;
     z-index: 1;
   }
@@ -143,6 +150,39 @@ a{
     padding-bottom: 10px;
   }
 
+  @media only screen and (max-width: 600px){
+    .phone {
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
+
+    button.whatsapp{
+      padding: 5px 10px;
+      border-radius: 4px;
+      width: 48px;
+    }
+
+    .email {
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
+
+    #mybutton1{
+    bottom: 10px;
+    right: 20px;
+    }
+
+    #mybutton2{
+    bottom: 10px;
+    right: 45px;
+    }
+
+    #mybutton3{
+    bottom: 10px;
+    right: 128px;
+    }
+  } 
+  
 
 /* START *******************************************/
 
@@ -174,6 +214,27 @@ a{
     width: 70%;
 }
 
+@media only screen and (max-width: 600px){
+  #start h1{
+    font-size: 4em;
+  }
+
+  #start h2{
+    font-size: 2em;
+  }
+} 
+
+@media only screen and (max-width: 360px){
+  #start h1{
+    font-size: 3em;
+  }
+
+  #start h2{
+    font-size: 2em;
+  }
+} 
+
+
 
 /* DAS HAUS *******************************************/
 
@@ -192,19 +253,87 @@ div#cardDivText.container{
 
 }
 
-#sliderDiv{
-  height: 100vh;
-}
+@media only screen and (max-width: 992px){
+  div#cardDivText.container{
+    font-size: 1.7em;
+  }
+} 
 
-#innerSliderDiv{
-  width: 100%;
-}
+@media only screen and (max-width: 600px){
+  div#cardDivText.container{
+    font-size: 1.6em;
+  }
+} 
 
+@media only screen and (max-width: 375px){
+  div#cardDivText.container{
+    font-size: 1.4em;
+  }
+} 
 
 
 #dasHaus hr{
-    color: #ffeccc;
+  color: #ffeccc;
 }
+
+#pictureDiv{
+  height: 100vh;
+}
+
+@media only screen and (max-width: 600px){
+  #mobileDivider{
+    height: 10vh;
+  }
+
+  #pictureDiv{
+    height: 100vh;
+  }
+
+  #dasHaus img{
+    width: 90%;
+  }
+
+  .tablet-margin{
+    margin-top: 20px;
+  }
+
+  div.hideOnLaptop {
+    display: none;
+  }
+} 
+
+@media only screen and (min-width: 700px) and (max-width: 993px){
+  #dasHaus img{
+    width: 90%;
+  }
+
+  .tablet-margin{
+    margin-bottom: 20px;
+  }
+
+  div.hideOnLaptop {
+    display: none;
+  }
+
+  div.hideOnLaptop1 {
+    display: none;
+  }
+} 
+
+@media only screen and (min-width: 1024px) {
+  #dasHaus img{
+    width: 80%;
+  }
+  
+  .tablet-margin{
+    margin-bottom: 20px;
+  }
+
+  div.hideOnLaptop {
+    display: none;
+  }
+
+} 
 
 
 /* PREIS *******************************************/
@@ -216,57 +345,60 @@ div#cardDivText.container{
   font-size:1.6em;
 } 
 
+#tableDiv{
+  overflow-x: auto;
+}
+
 .highlight{
   background-color: #ffd740;
 }
+
+@media only screen and (max-width: 600px){
+  #preis{
+    font-size:1.1em;
+  }
+} 
+
+@media only screen and (max-width: 360px){
+  #preis{
+    font-size:1em;
+  }
+} 
 
 
 /* KONTAKT *******************************************/
 
 #kontakt{
-    /*  background-color: rgba(230, 244, 241, 0.5);*/
-    text-align: center;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+}
 
+#kontakt p{
+  font-size: 1.5em;
+}
+
+#kontakt h3{
+  font-weight: bold;
+  font-size: 3em;
+}
+
+@media only screen and (max-width: 600px){
+  #kontakt p{
+    font-size: 1.2em;
+  }
+  #kontakt h3{
+    font-size:1.5em;
+  }
 } 
 
-#hideElement{
-  margin:0;
-  padding:0;
+@media only screen and (max-width: 360px){
+  #kontakt p{
+    font-size: 1em;
+  }
+  #kontakt h3{
+    font-size:1.3em;
+  }
 } 
-
-#kontakt h1{
-  font-size: 7.5vh;
-  color: white;
-  font-weight: bold;
-  text-shadow: 2px 2px 8px black;
-}
-
-#kontakt h2{
-  font-size: 4vh;
-  color: white;
-  font-weight: bold;
-  text-shadow: 2px 2px 8px black;
-}
-
-#mybutton11:hover{
-  opacity: 0.8;
-  padding-right: 10px;
-}
-
-#mybutton21:hover{
-  opacity: 0.8;
-  padding-right: 10px;
-}
-
-#mybutton31:hover{
-  opacity: 0.8;
-  padding-right: 10px;
-}
-
-.button-margin{
-  margin-bottom: 5vh;
-  margin-top: 5vh;
-}
 
 #emailBackground{
   background-image: url('../img/email-min.jpeg');
@@ -275,6 +407,53 @@ div#cardDivText.container{
   background-repeat: no-repeat;
   height: 50vh;
   opacity: 0.5;
+}
+
+#contactList{
+  height: 50vh;
+  text-align: center;
+}
+
+#emailContact{
+  padding: 4vh;
+}
+
+#whatsAppContact{
+  padding: 4vh;
+}
+
+#phoneContact{
+  padding: 4vh;
+}
+
+@media only screen and (max-width: 360px){
+  #emailContact{
+    padding: 3vh;
+  }
+  
+  #whatsAppContact{
+    padding: 3vh;
+  }
+  
+  #phoneContact{
+    padding: 3vh;
+  }
+} 
+
+
+#myButton11:hover{
+  opacity: 0.8;
+  padding: 10px 0 10px 0;
+}
+
+#myButton21:hover{
+  opacity: 0.8;
+  padding: 10px 0 10px 0;
+}
+
+#myButton31:hover{
+  opacity: 0.8;
+  padding: 10px 0 10px 0;
 }
 
 /* FOOTER *******************************************/
@@ -288,3 +467,15 @@ div#cardDivText.container{
 #fullWidthDivFooter{
     width: 100%;
 }
+
+@media only screen and (max-width: 600px){
+  .page-footer{
+    font-size: 1em;
+}
+} 
+
+@media only screen and (max-width: 360px){
+  .page-footer h5{
+    font-size: 1.5em;
+}
+} 
