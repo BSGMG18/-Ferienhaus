@@ -187,7 +187,7 @@ a{
 /* START *******************************************/
 
 #start{
-    background-image: url('../img/202-min.jpeg');
+    background-image: url('https://bsgmg18.github.io/Ferienhaus/img/202-min.jpeg');
     background-position: center center;
     background-size: cover;
     text-align: center;
@@ -401,7 +401,7 @@ div#cardDivText.container{
 } 
 
 #emailBackground{
-  background-image: url('../img/email-min.jpeg');
+  background-image: url('https://bsgmg18.github.io/Ferienhaus/img/email-min.jpeg');
   background-position: bottom;
   background-size: contain;
   background-repeat: no-repeat;
