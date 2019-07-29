@@ -119,25 +119,6 @@ padding: 15px 0 0 15px;
 }
 }
 
-.sidenav-footer {
-margin-bottom: 0px;
-padding: 0;
-.row {
-  margin-bottom: 0;
-  .social-icons {
-    a {
-      opacity: 0.5;
-      padding: 0;
-      text-align:center;
-      &:hover {
-        background-color:inherit;
-        opacity: 1;
-      }
-    }
-  }
-}
-}
-
 .sidenav-footer{
 position: fixed;
 left: 0;
