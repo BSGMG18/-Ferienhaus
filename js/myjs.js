@@ -1,3 +1,14 @@
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems);
@@ -9,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
-  $(document).ready(function() {
+/*   $(document).ready(function() {
     var $window = $(window);
     var x = $("#emailBackground").position();
     var mybutton1_bottom = x.top;
@@ -30,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         $( "#mybutton3" ).fadeIn( 300 );
       }
     });
-  });
+  }); */
 
   // Initialize and add the map
 function initMap() {
