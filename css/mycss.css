@@ -287,7 +287,7 @@ nav li a:hover:after{
   padding:0;
   margin:0;
   height: 100vh;
-  overflow: auto;
+  overflow-y: auto;
 }
 
 div#cardDivText.container{
