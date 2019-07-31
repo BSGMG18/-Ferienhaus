@@ -28,7 +28,6 @@ section{
 #navbar{
   top: 0;
   transition: top 0.4s;
-  font-size: 2em;
 }
 
 nav{
@@ -61,6 +60,7 @@ a{
 nav li a{
   position: relative;
   font-family: 'Roboto', sans-serif;
+  font-size: 2em;
 }
 
 @media only screen and (max-width: 1200px){
