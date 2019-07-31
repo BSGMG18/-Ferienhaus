@@ -382,11 +382,11 @@ div#cardDivText.container{
   background-color: rgba(230, 244, 241, 0.5);
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  font-size: 2em;
+  font-size: 1.8em;
 } 
 
 #preis th{
-  font-size:1.4em;
+  font-size:1.2em;
   }
 
 #tableDiv{
