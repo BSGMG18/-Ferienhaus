@@ -4,7 +4,7 @@
   height: 100%;
 }
 
-h1, h2, h3 {
+h1, h2, h3{
   padding: 0;
   margin: 0;
   text-transform: uppercase;
@@ -15,19 +15,19 @@ section{
 }
 
 .outerDiv{
-width: 100%;
+  width: 100%;
 }
 
 .myRow{
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 
 /***************************************************/
 #navbar{
   top: 0;
-  transition: top 0.3s;
+  transition: top 0.4s;
 }
 
 nav{
@@ -59,9 +59,19 @@ a{
 
 nav li a{
   position: relative;
-  font-size: 1.8em;
+  font-size: 2.4em;
   font-family: 'Roboto', sans-serif;
 }
+
+@media only screen and (max-width: 1200px){
+  nav li a{
+    font-size: 2.1em;
+  }
+} 
+
+#start h2{
+  font-size: 2.1em;
+  }
 
 nav li a:after{
   content: '';
@@ -90,116 +100,105 @@ nav li a:hover:after{
   font-family: 'Roboto', sans-serif;
 }
 
+@media only screen and (max-width: 992px){
+  #hideOn992{
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 600px){
   nav{
     height: 65px;
   }
 } 
 
-
-.side-nav li>a {
-padding: 0 16px;
-font-size: 1.8em;
-font-family: 'Roboto', sans-serif;
+.side-nav li>a{
+  padding: 0 16px;
+  font-size: 1.8em;
+  font-family: 'Roboto', sans-serif;
 }
 
-.side-nav .divider {
-margin:0;
-height:8px;
-border-bottom:1px solid #e0e0e0;
-background-color: transparent;
-}
-
-
-.sidenav-header {
-margin-bottom: 0px;
-padding: 15px 0 0 15px;
-.row {
-  margin-bottom: 0;
-}
-}
-
-.sidenav-footer {
-margin-bottom: 0px;
-padding: 0;
-.row {
-  margin-bottom: 0;
-  .social-icons {
-    a {
-      opacity: 0.5;
-      padding: 0;
-      text-align:center;
-      &:hover {
-        background-color:inherit;
-        opacity: 1;
-      }
-    }
-  }
-}
+.side-nav .divider{
+  margin:0;
+  height:8px;
+  border-bottom:1px solid #e0e0e0;
+  background-color: transparent;
 }
 
 .sidenav-footer{
-position: fixed;
-left: 0;
-bottom: 60px;
-width: 100%;
-text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 55px;
+  padding: 0;
+  margin-bottom: 0px;
+  width: 100%;
+  text-align: center;
 }
 
 .sidenav-footer .row{
-height: 30px;
+  height: 30px;
 }
 
-.sidenav-footer button.phone {
-margin-left: 8px;
+.sidenav-footer button.phone{
+  margin-left: 8px;
 }
 
 @media only screen and (max-width: 600px){
-.phone {
-  padding: 5px 10px;
-  border-radius: 4px;
+  .phone{
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+
+  button.whatsapp{
+    padding: 5px 10px;
+    border-radius: 4px;
+    width: 48px;
+  }
+
+  .email{
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
 }
 
-button.whatsapp{
-  padding: 5px 10px;
-  border-radius: 4px;
-  width: 48px;
-}
-
-.email {
-  padding: 5px 10px;
-  border-radius: 4px;
-}
-}
-
-#mybutton3 {
-position: fixed;
-z-index: 1;
+#mybutton3{
+  position: fixed;
+  z-index: 1;
 }
 
 #mybutton3:hover{
-opacity: 0.8;
+  opacity: 0.8;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
-#mybutton2 {
-position: fixed;
-
-z-index: 1;
-width: 77.2px;
-}
+#mybutton2{
+  position: fixed;
+  z-index: 1;
+  width: 77.2px;
+  }
 
 #mybutton2:hover{
-opacity: 0.8;
-
+  opacity: 0.8;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
-#mybutton1 {
-position: fixed;
-z-index: 1;
+#mybutton1{
+  position: fixed;
+  z-index: 1;
 }
 
 #mybutton1:hover{
-opacity: 0.8;
+  opacity: 0.8;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
 
@@ -213,7 +212,7 @@ opacity: 0.8;
 }
 
 #start h1{
-  font-size: 5em;
+  font-size: 6.5em;
   color: white;
   font-weight: bold;
   text-shadow: 2px 2px 8px black;
@@ -221,7 +220,7 @@ opacity: 0.8;
 }
 
 #start h2{
-  font-size: 3em;
+  font-size: 4em;
   color: white;
   font-weight: bold;
   text-shadow: 2px 2px 8px black;
@@ -233,154 +232,219 @@ opacity: 0.8;
   width: 70%;
 }
 
+@media only screen and (max-width: 1200px){
+  #start h1{
+    font-size: 5.5em;
+  }
+    
+  #start h2{
+    font-size: 3em;
+  }
+} 
+
+
+@media only screen and (max-width: 992px){
+  #start h1{
+    font-size: 4.3em;
+  }
+
+  #start h2{
+    font-size: 2.8em;
+  }
+} 
+
 @media only screen and (max-width: 600px){
 #start h1{
   font-size: 4em;
-}
+  }
 
 #start h2{
-  font-size: 2em;
-}
+  font-size: 2.3em;
+  }
 } 
 
 @media only screen and (max-width: 360px){
 #start h1{
-  font-size: 3em;
+  font-size: 3.5em;
 }
 
 #start h2{
-  font-size: 2em;
-}
+  font-size: 2.1em;
+  }
 } 
-
 
 
 /* DAS HAUS *******************************************/
 
+/*Card*/
 #cardDiv{
-padding:0 0 50px 0;
-margin:0;
-height: 100vh;
-overflow: auto;
+  padding:0;
+  margin:0;
+  height: 100vh;
+  overflow: auto;
 }
 
 div#cardDivText.container{
-font-size: 1.6em;
-text-align: left;
-font-family: 'Roboto', sans-serif;
-overflow-wrap: break-word;
-
+  font-size: 2em;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
 }
-
-@media only screen and (max-width: 992px){
-div#cardDivText.container{
-  font-size: 1.7em;
-}
-} 
-
-@media only screen and (max-width: 600px){
-div#cardDivText.container{
-  font-size: 1.6em;
-}
-} 
-
-@media only screen and (max-width: 375px){
-div#cardDivText.container{
-  font-size: 1.4em;
-}
-} 
-
 
 #dasHaus hr{
-color: #ffeccc;
+  color: #ffeccc;
 }
 
-#pictureDiv{
-height: 100vh;
-}
-
-@media only screen and (max-width: 600px){
-#mobileDivider{
-  height: 10vh;
-}
-
+/*Pictures*/
 #pictureDiv{
   height: 100vh;
 }
 
 #dasHaus img{
-  width: 90%;
+  width: 70%;
+  box-shadow: 12px 8px 15px #e0e0e0;
 }
 
-.tablet-margin{
-  margin-top: 20px;
+@media only screen and (max-width: 1200px){
+  /*Card*/
+  div#cardDivText.container{
+    font-size: 1.8em;
+  }
+  
+  /*Pictures*/
+  #dasHaus img{
+    width: 90%;
+  }
+
+  .tablet-margin{
+    margin-top: 20px;
+  }
+
 }
 
-div.hideOnLaptop {
-  display: none;
-}
-} 
+@media only screen and (max-width: 992px){
+  /*Card*/
+  div#cardDivText.container{
+    font-size: 1.7em;
+  }
 
-@media only screen and (min-width: 700px) and (max-width: 993px){
-#dasHaus img{
-  width: 90%;
-}
-
-.tablet-margin{
-  margin-bottom: 20px;
+  /*Pictures*/
+  #dasHaus img{
+    width: 75%;
+  }
 }
 
-div.hideOnLaptop {
-  display: none;
+@media only screen and (max-width: 600px){
+  #mobileDividerStartDasHaus{
+    height: 16vh;
+  }  
+
+  /*Card*/
+  div#cardDivText.container{
+    font-size: 1.5em;
+  }
+
+  /*Pictures*/
+  #dasHaus img{
+    width: 85%;
+  }
 }
 
-div.hideOnLaptop1 {
-  display: none;
-}
-} 
-
-@media only screen and (min-width: 1024px) {
-#dasHaus img{
-  width: 80%;
+@media only screen and (min-width: 600px){
+  .hideOnBigger600Less360{
+    display: none;
+  }
 }
 
-.tablet-margin{
-  margin-bottom: 20px;
-}
+@media only screen and (max-width: 360px){
+  #mobileDividerStartDasHaus{
+    height: 14vh;
+  }  
+  /*Card*/
+  div#cardDivText.container{
+    font-size: 1.4em;
+  }
 
-div.hideOnLaptop {
-  display: none;
-}
-
+  /*Pictures*/
 } 
 
 
 /* PREIS *******************************************/
 
 #preis{
-background-color: rgba(230, 244, 241, 0.5);
-text-align: center;
-font-family: 'Roboto', sans-serif;
-font-size:1.6em;
+  background-color: rgba(230, 244, 241, 0.5);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
 } 
 
+#preis th{
+  font-size:1.5em;
+  }
+
 #tableDiv{
-overflow-x: auto;
+  overflow-x: auto;
 }
 
 .striped{
-background-color: #ffd740;
+  background-color: #ffd740;
 }
 
+@media only screen and (max-width: 1200px){
+  #preis{
+    font-size: 1.8em;
+  }
+
+  #preis th{
+    font-size:1.3em;
+  }
+} 
+
+@media only screen and (max-width: 992px){
+  #preis{
+    font-size:1.5em;
+  }
+  #preis th{
+    font-size:1.3em;
+  }
+} 
+
 @media only screen and (max-width: 600px){
-#preis{
-  font-size:1.1em;
-}
+  #mobileDividerPreisTop{
+    background-color: rgba(230, 244, 241, 0.5);
+    height: 5vh;
+  } 
+  
+  #mobileDividerPreisBottom{
+    background-color: rgba(230, 244, 241, 0.5);
+    height: 5vh;
+  }
+
+  #preis{
+  font-size:1em;
+  }
+
+  #preis th{
+  font-size:1.4em;
+  }
 } 
 
 @media only screen and (max-width: 360px){
+#mobileDividerPreisTop{
+  background-color: rgba(230, 244, 241, 0.5);
+  height: 7vh;
+  } 
+
+#mobileDividerPreisBottom{
+  background-color: rgba(230, 244, 241, 0.5);
+  height: 7vh;
+  }
+
 #preis{
   font-size:1em;
+  }
+
+#preis th{
+  font-size:1.3em;
 }
 } 
 
@@ -388,39 +452,67 @@ background-color: #ffd740;
 /* KONTAKT *******************************************/
 
 #kontakt{
-text-align: left;
-font-family: 'Roboto', sans-serif;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
 }
 
 #kontakt p{
-font-size: 1.5em;
+  font-size: 3em;
+  font-weight: bold;
 }
 
-#kontakt h3{
-font-weight: bold;
-font-size: 3em;
+#kontakt h1{
+  font-size: 7.5em;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1200px){
+  #kontakt p{
+    font-size: 2.8em;
+  }
+  
+  #kontakt h1{
+    font-size: 7em;
+    margin-top: -22px;
+  }
+}
+
+@media only screen and (max-width: 992px){
+  #kontakt p{
+    font-size: 2.6em;
+  }
+  
+  #kontakt h1{
+    font-size: 4.8em;
+    margin-top: -25px;
+  }
 }
 
 @media only screen and (max-width: 600px){
 #kontakt p{
-  font-size: 1.2em;
+  font-size: 2em;
 }
-#kontakt h3{
-  font-size:1.5em;
+
+#kontakt h1{
+  font-size: 3.3em;
+  margin-top: -25px;
+  }
 }
-} 
 
 @media only screen and (max-width: 360px){
 #kontakt p{
-  font-size: 1em;
+  font-size: 1.6em;
 }
-#kontakt h3{
-  font-size:1.3em;
-}
+
+#kontakt h1{
+  font-size: 3em;
+  margin-top: -20px;
+  }
 } 
 
+/*Background-image*/
 #emailBackground{
-background-image: url('https://bsgmg18.github.io/Ferienhaus/img/email-min.jpeg');
+background-image: url('https://bsgmg18.github.io/Ferienhaus/img/email-min1.jpg');
 background-position: bottom;
 background-size: contain;
 background-repeat: no-repeat;
@@ -428,121 +520,338 @@ height: 50vh;
 
 }
 
+/*Contact Buttons*/
 #contactList{
-height: 50vh;
-text-align: center;
+  height: 50vh;
+  text-align: center;
 }
 
-#emailContact{
-padding: 4vh;
+#emailContact, #whatsAppContact, #phoneContact{
+  padding: 4vh;
 }
 
-#whatsAppContact{
-padding: 4vh;
-}
-
-#phoneContact{
-padding: 4vh;
-}
+@media only screen and (max-width: 600px){
+  #emailContact, #whatsAppContact, #phoneContact {
+    padding: 3vh;
+    margin:0;
+  }
+} 
 
 @media only screen and (max-width: 360px){
-#emailContact{
-  padding: 3vh;
-}
+  #emailContact, #whatsAppContact, #phoneContact {
+    padding: 3vh;
+    margin:0;
+  }
 
-#whatsAppContact{
-  padding: 3vh;
-}
-
-#phoneContact{
-  padding: 3vh;
-}
+  #emailContact{
+    margin-top: 20px;
+  }
 } 
 
 .phone {
-background-color : #039be5;
-color: white;
-padding: 10px 20px;
-border-radius: 4px;
-border-color: #039be5;
+  background-color : #039be5;
+  color: white;
+  padding: 25px 40px;
+  border-radius: 4px;
+  box-shadow: 7px 12px 5px #e0e0e0;
+  border-color: #039be5;
 }
 
 button.whatsapp{
-background-color : #009688;
-color: white;
-padding: 10px 20px;
-border-radius: 4px;
-border-color: #009688;
-width: 68px;
+  background-color : #009688;
+  color: white;
+  padding: 22.5px 57.5px;
+  border-radius: 4px;
+  box-shadow: 7px 12px 5px #e0e0e0;
+  border-color: #009688;
+  width: 68px;
+}
+
+#whatsAppImage{
+  width: 40px;
+  height: 40px;
+}
+
+#whatsAppIcon{
+  margin-left: -17px;
 }
 
 .email {
-background-color : #ef6771;
-color: white;
-padding: 10px 20px;
-border-radius: 4px;
-border-color: #ef6771;
+  background-color : #ef6771;
+  color: white;
+  padding: 25px 40px;
+  border-radius: 4px;
+  box-shadow: 7px 12px 5px #e0e0e0;
+  border-color: #ef6771;
 }
 
+#kontakt .material-icons{
+  font-size: 35px;
+}
+
+@media only screen and (max-width: 1200px){
+  .phone {
+    padding: 25px 40px;
+    border-radius: 4px;
+    box-shadow: 7px 12px 5px #e0e0e0;
+  }
+  
+  button.whatsapp{
+    padding: 22.5px 57.5px;
+    border-radius: 4px;
+    box-shadow: 7px 12px 5px #e0e0e0;
+  }
+
+  #whatsAppImage{
+    width: 40px;
+    height: 40px;
+  }
+  
+  #whatsAppIcon{
+    margin-left: -17px;
+  }
+  
+  .email {
+    padding: 25px 40px;
+    border-radius: 4px;
+    margin-top: 15px;
+    box-shadow: 7px 12px 5px #e0e0e0;
+  }
+
+  #kontakt .material-icons{
+    font-size: 35px;
+  }
+} 
+
+@media only screen and (max-width: 992px){
+  .phone {
+    padding: 25px 35px;
+    border-radius: 4px;
+    box-shadow: 7px 12px 5px #e0e0e0;
+  }
+  
+  button.whatsapp{
+    padding: 25px 50px;
+    border-radius: 4px;
+    box-shadow: 7px 12px 5px #e0e0e0;
+  }
+
+  #whatsAppImage{
+    width: 30px;
+    height: 30px;
+  }
+  
+  #whatsAppIcon{
+    margin-left: -15px;
+  }
+  
+  .email {
+    padding: 25px 35px;
+    border-radius: 4px;
+    margin-top: 15px;
+    box-shadow: 7px 12px 5px #e0e0e0;
+  }
+
+  #kontakt .material-icons{
+    font-size: 30px;
+  }
+} 
+
+@media only screen and (max-width: 600px){
+  .phone {
+    padding: 15px 19.5px;
+    border-radius: 4px;
+    box-shadow: 2px 6px 2px #e0e0e0;
+  }
+  
+  button.whatsapp{
+    padding: 15px 0px;
+    border-radius: 4px;
+    box-shadow: 2px 6px 2px #e0e0e0;
+  }
+
+  #whatsAppImage{
+    width: 25px;
+    height: 25px;
+  }
+  
+  #whatsAppIcon{
+    margin-right: -12px; 
+  }
+  
+  .email {
+    padding: 15px 19.5px;
+    border-radius: 4px;
+    margin-top: 15px;
+    box-shadow: 2px 6px 2px #e0e0e0;
+  }
+
+  #kontakt .material-icons{
+    font-size: 25px;
+  }
+} 
+
+@media only screen and (max-width: 360px){
+  .phone {
+    padding: 15px 19.5px;
+    border-radius: 4px;
+    box-shadow: 2px 6px 2px #e0e0e0;
+    margin-bottom: 20px;
+  }
+  
+  button.whatsapp{
+    padding: 15px 0px;
+    border-radius: 4px;
+    box-shadow: 2px 6px 2px #e0e0e0;
+  }
+
+  #whatsAppImage{
+    width: 25px;
+    height: 25px;
+  }
+  
+  #whatsAppIcon{
+    margin-right: -12px; 
+  }
+  
+  .email {
+    padding: 15px 19.5px;
+    border-radius: 4px;
+    box-shadow: 2px 6px 2px #e0e0e0;
+  }
+
+  #kontakt .material-icons{
+    font-size: 25px;
+  }
+} 
+
+
 #myButton11:hover{
-opacity: 0.8;
-transform: scale(1.1);
+  opacity: 0.8;
+  transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
 
 #myButton21:hover{
-opacity: 0.8;
-transform: scale(1.1);
+  opacity: 0.8;
+  transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
 
 #myButton31:hover{
-opacity: 0.8;
-transform: scale(1.1);
+  opacity: 0.8;
+  transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
 
 .phone:active{
-background-color : #039be5;
+  background-color : #039be5;
 }
 
 .email:active{
-background-color : #ef6771;
+  background-color : #ef6771;
 }
 
 .phone:focus{
-background-color : #039be5;
+  background-color : #039be5;
 }
 
 .email:focus{
-background-color : #ef6771;
+  background-color : #ef6771;
 }
-/* FOOTER *******************************************/
 
-.page-footer{
-  background-color: #03a9f4;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.4em;
-}
+
+/* FOOTER *******************************************/
 
 #fullWidthDivFooter{
   width: 100%;
 }
 
-@media only screen and (max-width: 600px){
 .page-footer{
-  font-size: 1em;
+  background-color: #03a9f4;
+  font-family: 'Roboto', sans-serif;
 }
+
+.page-footer p{
+  font-size: 1.5em;
+}
+
+.page-footer a{
+  font-size: 1.5em;
+}
+
+.page-footer h5{
+  font-size: 2.3em;
+}
+
+.footer-copyright{
+  font-size: 1.5em;
+}
+
+@media only screen and (max-width: 1200px){
+  .page-footer p{
+    font-size: 1.4em;
+  }
+  .page-footer a{
+    font-size: 1.4em;
+  }
+  .page-footer h5{
+  font-size: 1.9em;
+  }
+  .footer-copyright{
+    font-size: 1.4em;
+  }
+} 
+  
+
+@media only screen and (max-width: 992px){
+  .page-footer p{
+    font-size: 1.4em;
+  }
+  .page-footer a{
+    font-size: 1.4em;
+  }
+  .page-footer h5{
+  font-size: 1.9em;
+  }
+  .footer-copyright{
+    font-size: 1.4em;
+  }
+} 
+  
+
+@media only screen and (max-width: 600px){
+  .page-footer p{
+    font-size: 1em;
+  }
+  .page-footer a{
+    font-size: 1em;
+  }
+  .page-footer h5{
+  font-size: 1.3em;
+  }
+  .footer-copyright{
+    font-size: 1em;
+  }
 } 
 
 @media only screen and (max-width: 360px){
-.page-footer h5{
-  font-size: 1.5em;
-}
+  .page-footer p{
+    font-size: 1em;
+  }
+  .page-footer a{
+    font-size: 1em;
+  }
+  .page-footer h5{
+  font-size: 1.3em;
+  }
+  .footer-copyright{
+    font-size: 0.9em;
+  }
 } 
