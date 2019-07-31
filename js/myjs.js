@@ -19,30 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.Materialbox.init(elems);
   });
 
-
-/*   $(document).ready(function() {
-    var $window = $(window);
-    var x = $("#emailBackground").position();
-    var mybutton1_bottom = x.top;
-    console.log("MyButtonPosition " + mybutton1_bottom);
-    $window.on('scroll', function() {
-      var scrollTop = $window.scrollTop();
-      var viewport_height = $(window).height();
-      var scrollTop_bottom = scrollTop + viewport_height;
-      console.log("ScrollTopBottom " + scrollTop_bottom);
-      if (scrollTop_bottom > mybutton1_bottom) {
-        $( "#mybutton1" ).fadeOut( 300 );
-        $( "#mybutton2" ).fadeOut( 300 );
-        $( "#mybutton3" ).fadeOut( 300 );
-      }
-      if (scrollTop_bottom < mybutton1_bottom) {
-        $( "#mybutton1" ).fadeIn( 300 );
-        $( "#mybutton2" ).fadeIn( 300 );
-        $( "#mybutton3" ).fadeIn( 300 );
-      }
-    });
-  }); */
-
   // Initialize and add the map
 function initMap() {
     // The location of Uluru
