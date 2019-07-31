@@ -293,6 +293,7 @@ nav li a:hover:after{
 div#cardDivText.container{
   font-size: 1.8em;
   height: 100vh;
+  margin-top: 20vh;
   text-align: left;
   font-family: 'Roboto', sans-serif;
 }
