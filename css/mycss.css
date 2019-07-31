@@ -91,8 +91,8 @@ nav li a:hover:after{
   -o-transform: scale(1.1);
 }
 
-#mobile-demo a{
-  font-size: 1.8em;
+.side-nav li>a{
+  padding: 0 16px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -100,19 +100,21 @@ nav li a:hover:after{
   #hideOn992{
     display: none;
   }
+  .side-nav li>a{
+    font-size: 1.5em;
+
+  }
 }
 
 @media only screen and (max-width: 600px){
   nav{
     height: 65px;
   }
-} 
+  .side-nav li>a{
+    font-size: 1.2em;
 
-.side-nav li>a{
-  padding: 0 16px;
-  font-size: 1.8em;
-  font-family: 'Roboto', sans-serif;
-}
+  }
+} 
 
 .side-nav .divider{
   margin:0;
