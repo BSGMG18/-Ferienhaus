@@ -2,7 +2,7 @@
   margin: 0px;
   padding: 0px;
   height: 100%;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 h1, h2, h3{
@@ -60,13 +60,13 @@ a{
 
 nav li a{
   position: relative;
-  font-size: 2.2em;
+  font-size: 2.4em;
   font-family: 'Roboto', sans-serif;
 }
 
 @media only screen and (max-width: 1200px){
   nav li a{
-    font-size: 2em;
+    font-size: 2.1em;
   }
 } 
 
