@@ -496,7 +496,7 @@ div#cardDivText.container{
 
 @media only screen and (max-width: 600px){
 #kontakt p{
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 #kontakt h1{
@@ -730,7 +730,6 @@ button.whatsapp{
     font-size: 25px;
   }
 } 
-
 
 #myButton11:hover{
   opacity: 0.8;
