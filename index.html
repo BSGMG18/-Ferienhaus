@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ferienhaus Jordanov</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/mycss.css"> 
 </head>
@@ -13,11 +13,11 @@
 
 <body id="mybody">
     <header id="head">
-        <div class="navbar-fixed">
+        <div id="navbar" class="navbar-fixed">
             <nav>
-                <div class="nav-wrapper" style="background-color:rgba(0,0,0,0.0);">
+                <div class="nav-wrapper">
                     <div class="container">
-                        <a href="#!" class="brand-logo"><img id="logo" alt="" src="../img/logo.svg" width="100" height="50"></a>
+                        <a href="#!" class="brand-logo"><img id="logo" alt="" src="../img/havelferienhaus.svg" width="100" height="50"></a>
                         <a href="#" data-target="mobile-demo" class="sidenav-trigger">
                             <i class="material-icons">menu</i></a>
                         <ul class="right hide-on-med-and-down">
@@ -31,30 +31,61 @@
             </nav>
         </div>
             <ul class="sidenav" id="mobile-demo">
-            <li><a href="#start">Start</a></li>
-            <li><a href="#dasHaus">Galerie</a></li>
-            <li><a href="#preis">Preis</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
+                <li class="sidenav-header light-blue darken-1">
+                    <div class="row">
+                        <div class="col s12 center">
+                            <h4 class="waves-effect white-text" href="#">Havelferienhaus</h4>
+                        </div>
+                        <li class="white">
+                            <li>
+                                <a class="waves-effect" href="#start"><i class="material-icons" style="color:#039be5;">home</i>Start</a>
+                            </li>
+                        </li>
+                        <li class="white">
+                            <li>
+                                <a class="waves-effect" href="#dasHaus"><i class="material-icons" style="color:#009688;">home</i>Das Haus</a>
+                            </li>
+                        </li>
+                        <li class="white">
+                            <li>
+                                <a class="waves-effect" href="#pictureDiv"><i class="material-icons">photo_library</i>Galerie</a>
+                            </li>
+                        </li>
+                        <li class="white">
+                            <li>
+                                <a class="waves-effect" href="#preis"><i class="material-icons" style="color:#ffd740;">view_list</i>Leistungen</a>
+                            </li>
+                        </li>
+                        <li class="white">
+                            <li>
+                                <a class="waves-effect" href="#kontakt"><i class="material-icons">contacts</i>Kontakt</a>
+                                <li>
+                                    <div class="divider">
+
+                                    </div>
+                                </li>
+                            </li>
+                        </li> 
+                    </div> 
+                </li>
+                <li>
+                        <footer class="page-footer sidenav-footer">
+                                  
+                                <div class="footer-copyright">
+                                  <div class="container center-align">
+                                  © 2019 Havelferienhaus
+                                  </div>
+                                </div>
+                              </footer>
+                                
+                </li> 
+            </ul>  
     </header>
 
 
-    <div id="mybutton1">
-        <button class="phone" onclick="location.href='tel:+4915908691595';"><i class="material-icons">phone</i></button>
-    </div>
-
-    <div id="mybutton2">
-        <button class="whatsapp"><i class="material-icons"><img src="./img/whatsapp1.png" style="width: 20px;"></i></button>
-    </div>
-
-    <div id="mybutton3">
-        <button class="email" onclick="location.href='mailto:havelferienhaus@gmail.com';"><i class="material-icons">email</i></button>
-    </div>
-
-
     <section id="start" class="valign-wrapper">
-        <div id="outerDiv" class="row">
-            <div class="container col s12 m8 l8">
+        <div class="row outerDiv">
+            <div class="container col s12 m10 l10 xl8">
                 <h1>Havel Ferienhaus</h1>
                 <hr>
                 <h2>Brandenburg</h2>
@@ -62,92 +93,88 @@
         </div>         
     </section>
 
+    <div id="mobileDividerStartDasHaus"></div>
 
-    <section id="dasHaus" class="valign-wrapper">
-        <div id="fullWidthDiv" class="row">
-            <div class="col l4">
+    <section id="dasHaus">
+        <div class="row myRow">
+            <div class="col s12 m6 l6 xl4">
                 <div class="container">
-                    <div id="cardDiv" class=" valign-wrapper card panel teal">
-                        <div id="cardDiv2" class="container">
+                    <div id="cardDiv" class="card panel teal valign-wrapper">
+                        <div id="cardDivText" class="container">
                             <span class="white-text">
-                                <ul>
-                                    <li class="li-left">
-                                        80 qm großes Ferienhaus    
-                                    </li>
-                                    <li class="li-left">    
-                                        eigene Terasse mit Gartenmöbeln
-                                    </li>
-                                    <li class="li-left">
-                                        Grill und Garten
-                                    </li>
+                                
+                                    &#11088 80 qm großes Ferienhaus<br>
+                                    &#11088 Terasse mit Sitzgruppe und Sonnenschirm <br>
+                                    &#11088 anschließender Garten mit Grillplatz<br>
                                     <hr>
-                                    <li class="li-left">
-                                        Schlafzimmer für 2 Personen
-                                    </li>
-                                    <li class="li-left">
-                                        Wohnzimmer mit Essbereich und modernen offener Küche
-                                    </li>
-                                    <li class="li-left">
-                                        komfortable Schlafcouch für 2 Personen
-                                    </li>
+                                    &#11088 Wohnzimmer mit Essbereich und moderner offener Küche<br>
+                                    &#11088 Herd, Kühlschrank/TK, Ofen, Geschirrspüler, Wasserkocher, Toaster, Kaffeemaschine, div. Geschirr<br>
+                                    &#11088 komfortable Schlafcouch für 2 Personen<br>
                                     <hr>
-                                    <li class="li-left">
-                                        modernes Badezimmer mit Dusche
-                                    </li>
-                                    <li class="li-left">
-                                        Badewanne und WC
-                                    </li>
-                                    <li class="li-left">
-                                        Bettwäsche und Handtücher inklusive
-                                    </li>
-                                </ul>
+                                    &#11088 Schlafzimmer mit Doppelbett (180x200), bequem für 2 Personen<br>
+                                    &#11088 modernes Badezimmer mit Dusche Badewanne und WC<br>
+                                    &#11088 Hauswirtschaftsraum/ Abstellraum mit Waschmaschine und Staubsauger<br>
+                                
                             </span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="pictureDiv" class="col l8">
-                <div class="row">
-                    <div class="col l4">
-                        <img class="materialboxed" width="260" src="./img/01.jpg">
+            <div id="pictureDiv" class="col s12 m6 l6 xl8 valign-wrapper">
+                <div class="outerDiv">
+                    <div class="row">
+                        <div class="col s8 m6 l8 xl4 tablet-margin">
+                            <img class="materialboxed"  src="../img/01-min.jpeg">
+                        </div>
+                        <div class="col s4 m6 l4 xl4 tablet-margin">
+                            <img class="materialboxed"  src="../img/22-min.jpeg">
+                        </div>
+                        <div class="col s4 m6 l4 xl4 tablet-margin">
+                            <img class="materialboxed"  src="../img/mg_9261-hdr-min.jpeg">
+                        </div>
                     </div>
-                    <div class="col l4">
-                        <img class="materialboxed" width="260" src="./img/02.jpg">
+                    <div class="row">
+                        <div class="col s4 m6 l8 xl4 tablet-margin">
+                            <img class="materialboxed"  src="../img/07-min.jpeg">
+                        </div>
+                        <div class="col s4 m6 l8 xl4 tablet-margin">
+                            <img class="materialboxed"  src="../img/09-min.jpeg">
+                        </div>
+                        <div class="col s4 m6 offset-m6 l4 xl4 tablet-margin">
+                            <img class="materialboxed"  src="../img/08-min.jpeg">
+                        </div>
                     </div>
-                    <div class="col l4">
-                        <img class="materialboxed" width="260" src="./img/03.jpg">
+                    <div class="row">
+                        <div class="col s4 m6 offset-m6 l8 xl4 tablet-margin">
+                            <img class="materialboxed"  src="../img/14-min.jpeg">
+                        </div>
+                        <div class="col s4 m6 l4 xl4 tablet-margin">
+                            <img class="materialboxed"  src="../img/17-min.jpeg">
+                        </div>
+                        <div class="col s4 m6 l4 xl4 tablet-margin">
+                            <img class="materialboxed"  src="../img/18-min.jpeg">
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col l4">
-                        <img class="materialboxed" width="260" src="./img/04.jpg">
-                    </div>
-                    <div class="col l4">
-                        <img class="materialboxed" width="260" src="./img/05.jpg">
-                    </div>
-                    <div class="col l4">
-                        <img class="materialboxed" width="260" src="./img/11.jpg">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col l4">
-                        <img class="materialboxed" width="260" src="./img/10.jpg">
-                    </div>
-                    <div class="col l4">
-                        <img class="materialboxed" width="260" src="./img/08.jpg">
-                    </div>
-                    <div class="col l4">
-                        <img class="materialboxed" width="260" src="./img/09.jpg">
-                    </div>
+                    <div class="row">
+                        <div class="col s4 m6 offset-m6 l8 xl4 tablet-margin">
+                            <img class="materialboxed hideOnBigger600Less360"  src="../img/02-min.jpeg">
+                        </div>
+                        <div class="col s4 m6 l4 xl4 tablet-margin">
+                            <img class="materialboxed hideOnBigger600Less360"  src="../img/03-min.jpeg">
+                        </div>
+                        <div class="col s4 m6 l4 xl4 tablet-margin">
+                            <img class="materialboxed hideOnBigger600Less360"  src="../img/16-min.jpeg">
+                        </div>
                 </div>
             </div>
         </div>
     </section>
 
+	<div id="mobileDividerPreisTop"></div>
 
     <section id="preis" class="valign-wrapper">
-        <div class="container">
-            <table class="highlight">
+        <div id="tableDiv" class="container">
+            <table class="striped">
                 <thead>
                     <tr>
                         <th>Leistung</th>
@@ -191,39 +218,52 @@
         </div>
     </section>
 
+    <div id="mobileDividerPreisBottom"></div>
 
     <section id="kontakt">
         <div id="map" style="width: 100%; min-height: 50vh;">
         </div>
 
-        <div id="hideElement" class="row valign-wrapper" style="min-height: 50vh;">
-            <div id="emailBackground" class="col s12 m4 l4">
-                <!-- <div id="mybutton11" class="button-margin">
-                    <button class="phone"><i class="material-icons">phone</i></button>
-                    <p style="display: inline block;">Täglich erreichbar unter: +49 159 08691595.</p>
-                </div> -->
-            </div>
-            <div id="whatsAppBackground" class="col s12 m4 l4">
-                <!-- <div id="mybutton21" class="button-margin">
-                        <button class="whatsapp"><i class="material-icons"><img src="./img/whatsapp1.png" style="width: 20px;"></i></button>
-                        <p style="display: inline block;">Sie können uns auch per WhatsApp schhreiben!</p>
-                </div> -->
-            </div>
-            <div id="phoneBackground" class="col s12 m4 l4">
-                <!-- <div id="mybutton31" class="button-margin">
-                        <button class="email"><i class="material-icons">email</i></button>
-                        <p style="display: inline block;">Oder per Mail an: havelferienhaus@gmail.com</p>
-                </div> -->
-            </div>        
+        <div class="row myRow" style="min-height: 50vh;">
+                <div id="emailBackground" class="col s8 m8 l8 xl7">
+                    <div class="container">
+                    <span> 
+                    <p>Schreibt uns einen Brief! <h1>&#x1F604</h1> </p>
+                 <!--    <h3>Brielower Aue <span><h4>1k 14778</h4></span> Beetzsee</h3> -->
+                    </span> 
+                </div>
+                </div>
+                <div id="contactList" class="col s4 m4 l4 xl5 valign-wrapper">
+                    <div class="row">
+                        <div id="emailContact" class="col s12 m12 l12 xl4">
+                            <div id="myButton31">
+                                <button class="email waves-effect" onclick="location.href='mailto:havelferienhaus@gmail.com?subject=Havelferienhaus%20Brandenburg%20&amp;body=Hallo%20zusammen,%0D%0A%0D%0Aich%20würde%20gerne%20vom%20...%20bis%20zum%20...%20Ferien%20machen.';"><i class="material-icons">email</i></button>
+                            </div>
+                        </div>
+                        <div id="whatsAppContact" class="col s12 m12 l12 xl4">
+                            <div id="myButton21">
+                                <button class="whatsapp waves-effect" onclick="location.href='https://api.whatsapp.com/send?text=Hallo, ich würde gerne vom ... bis zum ... Ferien machen.&phone=+49 159 08691595';"><i id="whatsAppIcon" class="material-icons"><img id="whatsAppImage" src="../img/whatsapp1.png"></i></button>
+                            </div>
+                        </div>
+                        <div id="phoneContact" class="col s12 m12 l12 xl4">
+                            <div id="myButton11">
+                                <button class="phone waves-effect" onclick="location.href='tel:+49 159 08691595';"><i class="material-icons">phone</i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+         </div>   
     </section>
-
 
     <footer class="page-footer">
             <div class="container">
               <div class="row">
                 <div class="col l6 s12">
-                  <h5 class="white-text">Footer Content</h5>
-                  <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                  <h5 class="white-text">Kontaktieren Sie uns unter!</h5>
+                  <p class="grey-text text-lighten-4">
+                    <span style="color:#e0e0e0;">Telefon:</span> +49 157 58691595 <br>
+                    <span style="color:#e0e0e0;">E-Mail:</span>  havelferienhaus@gmail.com <br>
+                    <span style="color:#e0e0e0;">Adresse:</span>  Brielower Aue 1k 14778 Beetzsee</p>
                 </div>
                 <div class="col l4 offset-l2 s12">
                   <h5 class="white-text">Links</h5>
@@ -236,7 +276,7 @@
             </div>
             <div class="footer-copyright">
               <div class="container center-align">
-              © 2019 Maximilian Glomm
+              © 2019 Havelferienhaus
               </div>
             </div>
           </footer>
