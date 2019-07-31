@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   height: 100%;
+  font-size: 14px;
 }
 
 h1, h2, h3{
@@ -285,7 +286,7 @@ nav li a:hover:after{
 }
 
 div#cardDivText.container{
-  font-size: 1.6em;
+  font-size: 1.8em;
   text-align: left;
   font-family: 'Roboto', sans-serif;
 }
