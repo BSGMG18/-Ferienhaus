@@ -14,9 +14,13 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.Sidenav.init(elems);
   });
 
-document.addEventListener('DOMContentLoaded', function() {
+/* document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.materialboxed');
     var instances = M.Materialbox.init(elems);
+  }); */
+
+  $(document).ready(function(){
+    $('.materialboxed').materialbox();
   });
 
 /* 
