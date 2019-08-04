@@ -91,7 +91,7 @@ nav li a:hover:after{
   -o-transform: scale(1.1);
 }
 
-#mobile-demo > .col.s8.m8{
+#mobile-demo > .col.s8.m8 a{
   padding: 0 16px;
   font-family: 'Roboto', sans-serif;
 }
