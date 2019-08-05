@@ -345,6 +345,10 @@ div#cardDivText.container{
 
 @media only screen and (max-width: 600px){
 
+  #mobileDividerStartDasHaus{
+    height: 0vh;
+  }
+  
   #dasHaus{
     background-color: rgba(230, 244, 241, 0.5);
   }
