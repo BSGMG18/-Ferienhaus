@@ -443,6 +443,7 @@ div#cardDivText.container{
 
 #myCalender{
   height: 80vh;
+  width: 100%;
   overflow-x: scroll;
   overflow-y: scroll;
 }
