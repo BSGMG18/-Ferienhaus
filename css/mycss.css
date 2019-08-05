@@ -411,6 +411,10 @@ div#cardDivText.container{
 
  /* DASHAUSZWO *******************************************/
 
+ .collapsible-header{
+  background-color: rgb(0,150,136,0.9);
+}
+
  .collapseImages{
    height: 90%;
    width: 90%;
