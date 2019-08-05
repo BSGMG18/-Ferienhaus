@@ -23,6 +23,18 @@ section{
   padding: 0;
 }
 
+@media only screen and (min-width: 600px){
+  .hideOnBigger600Less360{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .hideOnLess600{
+    display: none;
+  }
+}
+
 
 /***************************************************/
 #navbar{
@@ -343,7 +355,7 @@ div#cardDivText.container{
   }
 }
 
-@media only screen and (max-width: 600px){
+/* @media only screen and (max-width: 600px){
 
   #mobileDividerStartDasHaus{
     height: 0vh;
@@ -354,7 +366,7 @@ div#cardDivText.container{
   }
 
   /*Card*/
-  div#cardDivText.container{
+/*   div#cardDivText.container{
     font-size: 1.5em;
     margin-top: 40vh;
   }
@@ -363,50 +375,42 @@ div#cardDivText.container{
     height: 80vh;
     margin-top: 10vh;
   }
-
+ */
   /*Pictures*/
-  #dasHaus img{
+/*   #dasHaus img{
     width: 100%;
   }
 
   #pictureDiv{
     height:95vh;
   }
-}
+}  */
 
-@media only screen and (min-width: 600px){
-  .hideOnBigger600Less360{
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 600px){
-  .hideOnLess600{
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 360px){
+/*  @media only screen and (max-width: 360px){
   #mobileDividerStartDasHaus{
     height: 0vh;
-  }  
+  }   */
 
   /*Card*/
-  div#cardDivText.container{
+/*   div#cardDivText.container{
     font-size: 1.4em;
     margin-top: 23vh;
   }
-
-  #cardDiv{
+ */
+/*   #cardDiv{
     height: 80vh;
     margin-top: 10vh;
-  }
+  } */
 
   /*Pictures*/
-  #pictureDiv{
+/*   #pictureDiv{
     height:95vh;
   }
 } 
+ */
+
+ /* DASHAUSZWO *******************************************/
+
 
 
 /* PREIS *******************************************/
@@ -457,13 +461,12 @@ div#cardDivText.container{
   
   #mobileDividerPreisBottom{
     background-color: rgba(230, 244, 241, 0.5);
-    height: 5vh;
+    height: 0vh;
   }
 
 
   #preis{
   font-size:1em;
-  height: 95vh
   }
 
   #preis th{
@@ -479,12 +482,11 @@ div#cardDivText.container{
 
 #mobileDividerPreisBottom{
   background-color: rgba(230, 244, 241, 0.5);
-  height: 5vh;
+  height: 0vh;
   }
 
 #preis{
   font-size:1em;
-  height: 95vh
   }
 
 #preis th{
