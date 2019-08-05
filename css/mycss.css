@@ -411,7 +411,10 @@ div#cardDivText.container{
 
  /* DASHAUSZWO *******************************************/
 
-
+ .collapseImages{
+   height: 50%;
+   width: 50%;
+ }
 
 /* PREIS *******************************************/
 
