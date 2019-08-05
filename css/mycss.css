@@ -378,14 +378,22 @@ div#cardDivText.container{
 
 @media only screen and (max-width: 360px){
   #mobileDividerStartDasHaus{
-    height: 14vh;
+    height: 0vh;
   }  
   /*Card*/
   div#cardDivText.container{
     font-size: 1.4em;
   }
+  #cardDiv{
+    height: 80vh;
+    margin-top: 10vh;
+  }
 
   /*Pictures*/
+  #pictureDiv{
+    height:95vh;
+    margin-bottom: -8vh;
+  }
 } 
 
 
@@ -452,12 +460,12 @@ div#cardDivText.container{
 @media only screen and (max-width: 360px){
 #mobileDividerPreisTop{
   background-color: rgba(230, 244, 241, 0.5);
-  height: 7vh;
+  height: 0vh;
   } 
 
 #mobileDividerPreisBottom{
   background-color: rgba(230, 244, 241, 0.5);
-  height: 7vh;
+  height: 0vh;
   }
 
 #preis{
