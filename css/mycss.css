@@ -461,12 +461,12 @@ div#cardDivText.container{
 
 /* KONTAKT *******************************************/
 
-div#mymap{
+.mymap{
   height: 50vh;
   width: 100%;
 }
 
-#iFrameMap{
+.iFrameMap{
   position: absolute;
   top: 0;
   left: 0;
