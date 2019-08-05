@@ -356,6 +356,7 @@ div#cardDivText.container{
   /*Card*/
   div#cardDivText.container{
     font-size: 1.5em;
+    margin-top: 40vh;
   }
 
   #cardDiv{
@@ -370,7 +371,6 @@ div#cardDivText.container{
 
   #pictureDiv{
     height:95vh;
-    margin-bottom: -8vh;
   }
 }
 
@@ -384,10 +384,13 @@ div#cardDivText.container{
   #mobileDividerStartDasHaus{
     height: 0vh;
   }  
+
   /*Card*/
   div#cardDivText.container{
     font-size: 1.4em;
+    margin-top: 23vh;
   }
+
   #cardDiv{
     height: 80vh;
     margin-top: 10vh;
@@ -396,7 +399,6 @@ div#cardDivText.container{
   /*Pictures*/
   #pictureDiv{
     height:95vh;
-    margin-bottom: -8vh;
   }
 } 
 
@@ -412,7 +414,7 @@ div#cardDivText.container{
 
 #preis th{
   font-size:1.2em;
-  }
+}
 
 #tableDiv{
   overflow-x: auto;
@@ -449,11 +451,12 @@ div#cardDivText.container{
   
   #mobileDividerPreisBottom{
     background-color: rgba(230, 244, 241, 0.5);
-    height: 0vh;
   }
+  height: 5vh;
 
   #preis{
   font-size:1em;
+  height: 95vh
   }
 
   #preis th{
@@ -469,11 +472,12 @@ div#cardDivText.container{
 
 #mobileDividerPreisBottom{
   background-color: rgba(230, 244, 241, 0.5);
-  height: 0vh;
+  height: 5vh;
   }
 
 #preis{
   font-size:1em;
+  height: 95vh
   }
 
 #preis th{
