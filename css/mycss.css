@@ -357,6 +357,10 @@ div#cardDivText.container{
   #dasHaus img{
     width: 85%;
   }
+
+  #cardDiv{
+    height: 80vh;
+  }
 }
 
 @media only screen and (min-width: 600px){
