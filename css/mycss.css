@@ -451,8 +451,9 @@ div#cardDivText.container{
   
   #mobileDividerPreisBottom{
     background-color: rgba(230, 244, 241, 0.5);
+    height: 5vh;
   }
-  height: 5vh;
+
 
   #preis{
   font-size:1em;
