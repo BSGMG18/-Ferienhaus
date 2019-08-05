@@ -464,11 +464,13 @@ div#cardDivText.container{
 #mymap{
   height: 50vh;
   width: 100%;
+  overflow: hidden;
 }
 
 #iFrameMap{
   width: 100%;
   height: 100%;
+  border: 0;
 }
 
 #kontakt{
