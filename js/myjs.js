@@ -52,9 +52,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
  */
-
-$( window ).scroll(function() {
-  $( "#kalenderText" ).css( "display", "inline" ).fadeOut( "10" );
+$(document).ready(function(){
+  $( "#kalenderText" ).css( "display", "none" )
+  $( window ).scroll(function() {
+    $( "#kalenderText" ).css( "display", "inline" ).fadeOut( "10" );
+  });
 });
 
 
