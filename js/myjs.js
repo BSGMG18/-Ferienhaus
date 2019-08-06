@@ -66,6 +66,18 @@ $(document).ready(function(){
 });
 
 
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    $('#navbar').fadeOut('slow');
+  }
+  prevScrollpos = currentScrollPos;
+} 
+
+
 /*   // Initialize and add the map
 function initMap() {
     // The location of Uluru
@@ -82,26 +94,3 @@ function initMap() {
   }
 }
  */
-
-$(document).ready(function () {
-  
-  'use strict';
-  
-   var c, currentScrollTop = 0,
-       navbar = $('nav');
-
-   $(window).scroll(function () {
-      var a = $(window).scrollTop();
-      var b = navbar.height();
-     
-      currentScrollTop = a;
-     
-      if (c < currentScrollTop && a > b + b) {
-        navbar.addClass("scrollUp");
-      } else if (c > currentScrollTop && !(a <= b)) {
-        navbar.removeClass("scrollUp");
-      }
-      c = currentScrollTop;
-  });
-  
-});
