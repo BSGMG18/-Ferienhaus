@@ -52,12 +52,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
  */
+
 $(document).ready(function(){
   $( "#kalenderText" ).css( "display", "inline" )
   $( window ).scroll(function() {
     if ($(this).scrollTop() > 0) {
       $('#kalenderText').fadeOut();
     }
+    else if($(this).scrollTop() <= 5) {
+      $('#kalenderText').fadeIn();
+    }
+  });
 });
 
 
