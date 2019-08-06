@@ -55,7 +55,9 @@ document.addEventListener('DOMContentLoaded', function() {
 $(document).ready(function(){
   $( "#kalenderText" ).css( "display", "inline" )
   $( window ).scroll(function() {
-    $( "#kalenderText" ).css( "display", "none" )
+    if ($(this).scrollTop() > 0) {
+      $('#kalenderText').fadeOut();
+    }
 });
 
 
