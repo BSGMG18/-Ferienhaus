@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
  */
 
 $( window ).scroll(function() {
-  $( "#kalenderText" ).css( "display", "inline" ).fadeOut( "slow" );
+  $( "#kalenderText" ).css( "display", "inline" ).fadeOut( "10" );
 });
 
 
