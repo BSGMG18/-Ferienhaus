@@ -123,11 +123,6 @@ nav li a:hover:after{
   font-family: 'Roboto', sans-serif;
 }
 
-.starsReview{
-  display: inline-block;
-  background-color: #ffd740;
-}
-
 @media only screen and (min-width: 600px) and (max-width: 992px){
   #hideOn992{
     display: none;
