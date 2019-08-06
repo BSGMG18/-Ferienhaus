@@ -234,6 +234,10 @@ nav li a:hover:after{
   -o-transform: scale(1.1);
 }
 
+.sidenav > #bottomLi{
+  margin-top: auto;
+}
+
 
 /* FLOATING BUTTON *********************************/
 
