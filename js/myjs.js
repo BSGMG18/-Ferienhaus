@@ -53,10 +53,9 @@ document.addEventListener('DOMContentLoaded', function() {
   });
  */
 $(document).ready(function(){
-  $( "#kalenderText" ).css( "display", "none" )
+  $( "#kalenderText" ).css( "display", "inline" )
   $( window ).scroll(function() {
-    $( "#kalenderText" ).css( "display", "inline" ).fadeOut( "10" );
-  });
+    $( "#kalenderText" ).css( "display", "none" )
 });
 
 
