@@ -439,7 +439,7 @@ div#cardDivText.container{
  .collapseImages{
    height: 90%;
    width: 90%;
-   box-shadow: 12px 8px 15px #e0e0e0;
+  /*box-shadow: 12px 8px 15px #e0e0e0; */
    margin-top: 4vh;
  }
 

@@ -53,6 +53,11 @@ document.addEventListener('DOMContentLoaded', function() {
   });
  */
 
+$( window ).scroll(function() {
+  $( "#kalenderText" ).css( "display", "inline" ).fadeOut( "slow" );
+});
+
+
 /*   // Initialize and add the map
 function initMap() {
     // The location of Uluru
