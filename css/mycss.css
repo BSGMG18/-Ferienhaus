@@ -24,7 +24,7 @@ section{
 }
 
 @media only screen and (min-width: 600px){
-  .hideOnBigger600Less360{
+  .hideOnBigger600{
     display: none;
   }
 }
