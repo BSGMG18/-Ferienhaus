@@ -23,6 +23,18 @@ section{
   padding: 0;
 }
 
+@media only screen and (min-width: 600px){
+  .hideOnBigger600Less360{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .hideOnLess600{
+    display: none;
+  }
+}
+
 
 /***************************************************/
 #navbar{
@@ -51,6 +63,21 @@ a.brand-logo{
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
+
+#mobile-logo{
+  width: 25%;
+  height: 25%;
+  margin: 0 0 1vh 0;
+}
+
+#mobile:hover{
+  opacity: 0.8;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
 
 a{
   text-decoration: none;
@@ -343,39 +370,94 @@ div#cardDivText.container{
   }
 }
 
-@media only screen and (max-width: 600px){
+/* @media only screen and (max-width: 600px){
+
   #mobileDividerStartDasHaus{
-    height: 16vh;
-  }  
+    height: 0vh;
+  }
+  
+  #dasHaus{
+    background-color: rgba(230, 244, 241, 0.5);
+  }
 
   /*Card*/
-  div#cardDivText.container{
+/*   div#cardDivText.container{
     font-size: 1.5em;
+    margin-top: 40vh;
   }
 
+  #cardDiv{
+    height: 80vh;
+    margin-top: 10vh;
+  }
+ */
   /*Pictures*/
-  #dasHaus img{
-    width: 85%;
+/*   #dasHaus img{
+    width: 100%;
   }
-}
 
-@media only screen and (min-width: 600px){
-  .hideOnBigger600Less360{
-    display: none;
+  #pictureDiv{
+    height:95vh;
   }
-}
+}  */
 
-@media only screen and (max-width: 360px){
+/*  @media only screen and (max-width: 360px){
   #mobileDividerStartDasHaus{
-    height: 14vh;
-  }  
+    height: 0vh;
+  }   */
+
   /*Card*/
-  div#cardDivText.container{
+/*   div#cardDivText.container{
     font-size: 1.4em;
+    margin-top: 23vh;
   }
+ */
+/*   #cardDiv{
+    height: 80vh;
+    margin-top: 10vh;
+  } */
 
   /*Pictures*/
+/*   #pictureDiv{
+    height:95vh;
+  }
 } 
+ */
+
+
+ /* DASHAUSZWO *******************************************/
+
+ .collapsible-header{
+  background-color: rgb(0,150,136,0.9);
+  font-size:1em;
+}
+
+.collapsible-body{
+  font-size:1em;
+}
+
+ .collapseImages{
+   height: 90%;
+   width: 90%;
+   box-shadow: 12px 8px 15px #e0e0e0;
+   margin-top: 4vh;
+ }
+
+
+/* KALENDER *******************************************/
+
+#myCalender{
+  height: 80vh;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+
+#iFrameKalender{
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 
 
 /* PREIS *******************************************/
@@ -389,7 +471,7 @@ div#cardDivText.container{
 
 #preis th{
   font-size:1.2em;
-  }
+}
 
 #tableDiv{
   overflow-x: auto;
@@ -421,12 +503,12 @@ div#cardDivText.container{
 @media only screen and (max-width: 600px){
   #mobileDividerPreisTop{
     background-color: rgba(230, 244, 241, 0.5);
-    height: 5vh;
+    height: 0h;
   } 
   
   #mobileDividerPreisBottom{
     background-color: rgba(230, 244, 241, 0.5);
-    height: 5vh;
+    height: 0vh;
   }
 
   #preis{
@@ -441,12 +523,12 @@ div#cardDivText.container{
 @media only screen and (max-width: 360px){
 #mobileDividerPreisTop{
   background-color: rgba(230, 244, 241, 0.5);
-  height: 7vh;
+  height: 0vh;
   } 
 
 #mobileDividerPreisBottom{
   background-color: rgba(230, 244, 241, 0.5);
-  height: 7vh;
+  height: 0vh;
   }
 
 #preis{
@@ -461,17 +543,13 @@ div#cardDivText.container{
 
 /* KONTAKT *******************************************/
 
-div#mymap{
-  position: relative;
+#mymap{
+  height: 50vh;
+  width: 100%;
   overflow: hidden;
-  padding-top: 56.25%;
-  min-height: 100%;
 }
 
 #iFrameMap{
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   border: 0;
