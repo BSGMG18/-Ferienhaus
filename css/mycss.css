@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   height: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3{
@@ -238,6 +239,7 @@ nav li a:hover:after{
 
 #kalenderText{
   display: inline;
+  font-weight: bold;
 }
 
 #floatingButton:hover{
