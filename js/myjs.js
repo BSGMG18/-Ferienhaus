@@ -28,10 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.Collapsible.init(elems);
   });
 
-  $(document).ready(function(){
-    $('.tooltipped').tooltip();
-  });
-        
 /* 
   $(document).ready(function() {
     var $window = $(window);
