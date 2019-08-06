@@ -34,8 +34,6 @@ section{
     display: none;
   }
 }
-
-
 /***************************************************/
 #navbar{
   top: 0;
@@ -63,7 +61,6 @@ a.brand-logo{
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
-
 #mobile-logo{
   width: 25%;
   height: 25%;
@@ -239,6 +236,10 @@ nav li a:hover:after{
 
 /* START *******************************************/
 
+#floatingButton{
+  background-color: #039be5;
+}
+
 #start{
   background-image: url('https://bsgmg18.github.io/Ferienhaus/img/20-min.jpeg');
   background-position: center center;
@@ -369,7 +370,6 @@ div#cardDivText.container{
     width: 75%;
   }
 }
-
 /* @media only screen and (max-width: 600px){
 
   #mobileDividerStartDasHaus{
@@ -471,7 +471,7 @@ div#cardDivText.container{
 
 #preis th{
   font-size:1.2em;
-}
+  }
 
 #tableDiv{
   overflow-x: auto;
@@ -548,12 +548,11 @@ div#cardDivText.container{
   width: 100%;
   overflow: hidden;
 }
-
-#iFrameMap{
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
+  #iFrameMap{
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
 
 #kontakt{
   text-align: left;
