@@ -65,17 +65,18 @@ $(document).ready(function(){
   });
 });
 
-
+$(document).ready(function(){
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    $('#navbar').fadeIn('slow');
+    $('#navbar').show('slow');
   } else {
-    $('#navbar').fadeOut('slow');
+    $('#navbar').hide('slow');
   }
   prevScrollpos = currentScrollPos;
 } 
+});
 
 
 /*   // Initialize and add the map
