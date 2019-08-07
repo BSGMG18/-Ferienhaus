@@ -65,8 +65,8 @@ $(document).ready(function(){
   });
 });
 
-var prevScrollpos = window.pageYOffset;
 function myfunction(x){
+  var prevScrollpos = window.pageYOffset;
   if (x.matches) {
     window.onscroll = function() {
       var currentScrollPos = window.pageYOffset;
