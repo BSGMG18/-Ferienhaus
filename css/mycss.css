@@ -257,10 +257,19 @@ nav li a:hover:after{
 }
 
 #start{
-  background-image: url('https://bsgmg18.github.io/Ferienhaus/img/20-min.jpeg');
+  background-image: url('https://bsgmg18.github.io/Ferienhaus/img/20-min1.jpeg');
   background-position: center center;
   background-size: cover;
   text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+  #start{
+    background-image: url('https://bsgmg18.github.io/Ferienhaus/img/20-min1mobile.jpeg');
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+  }
 }
 
 #start h1{
@@ -631,11 +640,21 @@ div#cardDivText.container{
 
 /*Background-image*/
 #emailBackground{
-background-image: url('https://bsgmg18.github.io/Ferienhaus/img/email-min1-min.jpg');
+background-image: url('https://bsgmg18.github.io/Ferienhaus/img/email-min1-min1.jpg');
 background-position: bottom;
 background-size: contain;
 background-repeat: no-repeat;
 height: 50vh;
+}
+
+@media only screen and (max-width: 600px){
+  #emailBackground{
+    background-image: url('https://bsgmg18.github.io/Ferienhaus/img/email-min1-min1mobile.jpg');
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50vh;
+    }
 }
 
 /*Contact Buttons*/
