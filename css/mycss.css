@@ -42,18 +42,9 @@ section{
   }
 }
 /***************************************************/
-
 #navbar{
-  z-index: 1;
-}
-
-@media only screen and (min-width: 992px){
-  #navbar{
-    top: 0;
-    position: fixed;
-    transition: top 0.4s;
-    z-index: 1;
-  }
+  top: 0;
+  transition: top 0.4s;
 }
 
 nav{
