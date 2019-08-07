@@ -70,9 +70,9 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementsByClassName("navbar-hide").style.top = "0";
+    document.getElementsById("navbar").style.top = "0";
   } else {
-    document.getElementsByClassName("navbar-hide").style.top = "-60px";
+    document.getElementsById("navbar").style.top = "-60px";
   }
   prevScrollpos = currentScrollPos;
 } 
