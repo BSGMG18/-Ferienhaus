@@ -24,6 +24,12 @@ section{
   padding: 0;
 }
 
+@media only screen and (min-width: 600px) and (max-width: 992px){
+  #hideOn992{
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 600px){
   .hideOnBigger600{
     display: none;
@@ -36,9 +42,17 @@ section{
   }
 }
 /***************************************************/
+
 #navbar{
   top: 0;
-  transition: top 0.4s;
+}
+
+@media only screen and (min-width: 992px){
+  #navbar{
+    top: 0;
+    position: fixed;
+    transition: top 0.4s;
+  }
 }
 
 nav{
@@ -119,12 +133,6 @@ nav li a:hover:after{
 .side-nav li>a{
   padding: 0 16px;
   font-family: 'Roboto', sans-serif;
-}
-
-@media only screen and (min-width: 600px) and (max-width: 992px){
-  #hideOn992{
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 992px){
