@@ -59,7 +59,7 @@ $(document).ready(function(){
     if ($(this).scrollTop() > 0) {
       $('#kalenderText').fadeOut();
     }
-    else if($(this).scrollTop() <= 5) {
+    else if($(this).scrollTop() <= 100) {
       $('#kalenderText').fadeIn();
     }
   });
