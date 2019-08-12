@@ -24,11 +24,13 @@ section{
   padding: 0;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 992px) and (max-height: 922px){
+@media only screen and (min-width: 600px) and (max-width: 992px){
   #hideOn992{
     display: none;
   }
+}
 
+@media only screen and (min-width: 600px) and (max-width: 992px) and (max-height: 922px){
   section{
     overflow: auto;
   }
