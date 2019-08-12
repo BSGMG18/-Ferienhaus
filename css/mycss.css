@@ -38,6 +38,10 @@ section{
   section{
     overflow: auto;
   }
+
+  .overflowHeight922{
+    overflow: auto;
+  }
 }
 
 @media only screen and (min-width: 600px){
