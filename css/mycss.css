@@ -31,6 +31,10 @@ section{
 }
 
 @media only screen and (min-width: 600px) and (max-width: 992px) and (max-height: 922px){
+  .hideOn922height{
+    display: none;
+  }
+
   section{
     overflow: auto;
   }
@@ -47,6 +51,7 @@ section{
     display: none;
   }
 }
+
 /***************************************************/
 #navbar{
   top: 0;
