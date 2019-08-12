@@ -30,7 +30,7 @@ section{
   }
 
   section{
-    min-height: 150%;
+    display: none;
   }
 }
 
