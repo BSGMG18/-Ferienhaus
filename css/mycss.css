@@ -685,8 +685,40 @@ div#cardDivText.container{
 }
 
 @media only screen and (min-width: 600px) and (max-width: 992px) and (max-height: 922px){
-  #emailContact{
-    margin-top: 20vh;
+  #emailContact, #whatsAppContact, #phoneContact{
+    display: inline;
+  }
+
+  .phone {
+    padding: 15px 19.5px;
+    border-radius: 4px;
+    box-shadow: 2px 6px 2px #e0e0e0;
+  }
+  
+  button.whatsapp{
+    padding: 15px 0px;
+    border-radius: 4px;
+    box-shadow: 2px 6px 2px #e0e0e0;
+  }
+
+  #whatsAppImage{
+    width: 25px;
+    height: 25px;
+  }
+  
+  #whatsAppIcon{
+    margin-right: -12px; 
+  }
+  
+  .email {
+    padding: 15px 19.5px;
+    border-radius: 4px;
+    margin-top: 15px;
+    box-shadow: 2px 6px 2px #e0e0e0;
+  }
+
+  #kontakt .material-icons{
+    font-size: 25px;
   }
 }
 
