@@ -655,11 +655,13 @@ div#cardDivText.container{
 
 /*Background-image*/
 #emailBackground{
-background-image: url('https://bsgmg18.github.io/Ferienhaus/img/email-min1-min1.jpg');
-background-position: bottom;
-background-size: contain;
-background-repeat: no-repeat;
-height: 50vh;
+  position: fixed;
+  bottom: 0;
+  background-image: url('https://bsgmg18.github.io/Ferienhaus/img/email-min1-min1.jpg');
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50vh;
 }
 
 @media only screen and (max-width: 600px){
