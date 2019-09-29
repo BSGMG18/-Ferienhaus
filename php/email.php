@@ -32,7 +32,7 @@ if(isset($_POST['submit'])){
 
 
 
-    $empfaenger = "maximilianglomm@googlemail.com";
+    $empfaenger = "a.jordanov@t-online.de";
 
     $betreff = "Havelferienhaus";
 
@@ -51,7 +51,7 @@ if(isset($_POST['submit'])){
 					<span class="card-title"><h2>Ihre E-Mail wurde erfolgreich versendet</h2></span>
 				</div> 
 				<div class="card-action">
-          			<a href="http://maximilianglomm.bplaced.net/">Zur&uuml;ck zur Website</a>
+          			<a href="http://havelferienhaus.com">Zur&uuml;ck zur Website</a>
         			</div>
 			</div>
 		</div>
@@ -68,7 +68,7 @@ if(isset($_POST['submit'])){
 					<span class="card-title"><h2>Es gab einen Fehler. Ihre E-Mail konnte leider nicht versendet werden</h2></span>
 				</div> 
 				<div class="card-action">
-          			<a href="http://maximilianglomm.bplaced.net/">Zur&uuml;ck zur Website</a>
+          			<a href="http://havelferienhaus.com">Zur&uuml;ck zur Website</a>
         			</div>
 			</div>
 		</div>
