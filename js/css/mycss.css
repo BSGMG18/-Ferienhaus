@@ -1,0 +1,474 @@
+html, body{
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5{
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+section{
+  min-height: 100%;
+}
+
+.divwidth100{
+  width: 100%;
+}
+
+.myRow{
+  margin: 0;
+  padding: 0;
+}
+
+.no{
+  display: none;
+}
+
+@media only screen and (max-width: 1200px){
+  .hideOnSmaller1200{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px){
+  .hideOnBigger992{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px){
+  #hideOnBt600n992{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px){
+  .hideOnBigger600{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .hideOnLess600{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 900px){
+  .hideOnBigger900{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .hideOnLess900{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 733px){
+  .hideOnLess733{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  #swiper{
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    left: 5px;
+    top:50%;
+    z-index: 5;
+  }
+}
+
+
+/***************************************************/
+#navbar{
+  top: 0;
+  transition: top 0.4s;
+}
+
+nav{
+  background-color: #03a9f4;
+}
+
+a.brand-logo{
+  padding: 0;
+  margin: 0;
+}
+
+#logo{
+  margin: 1vh 0;
+}
+
+@media only screen and (max-width: 600px){
+  #logo{
+    height: 45px;
+    width: 90px;
+  }
+}
+
+#logo:hover{
+  opacity: 0.8;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+#mobile:hover{
+  opacity: 0.8;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+nav li a{
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+@media only screen and (max-width: 1200px){
+  nav li a{
+    font-size: 1.1em;
+  }
+}
+
+nav li a:after{
+  content: '';
+  position: absolute;
+  width: 0; height: 3px;
+  display: block;
+  margin-top: -4px;
+  right: 0;
+  background: #fff;
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+
+nav li a:hover:after{
+  width: 100%;
+  left: 0;
+  background: #fff;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.underline:after{
+  width: 100%;
+  left: 0;
+  background: white;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.sidenav .waves-effect{
+  padding: 0 16px;
+  font-family: sans-serif;
+  font-size: 1em;
+}
+
+.user-view{
+  margin: 0 !important;
+  padding: 25px !important;
+}
+
+.side-nav .divider{
+  margin:0;
+  height:8px;
+  border-bottom:1px solid #e0e0e0;
+  background-color: transparent;
+}
+
+.sidenav-footer{
+  position: fixed;
+  left: 0;
+  bottom: 55px;
+  padding: 0;
+  margin-bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.sidenav-footer .row{
+  height: 30px;
+}
+
+.sidenav-footer button.phone{
+  margin-left: 8px;
+}
+
+.active-mobile{
+ /*  background-color: rgba(2, 166, 242, 0.15); */
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(255, 255, 255) 0%, rgba(2, 166, 242, 0.4) 90% );
+}
+
+
+/* CSS Loader *******************************************/
+
+
+
+/* START *******************************************/
+#start{
+  background-image: url('/img/20-min1.jpeg');
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+  #start{
+    background-image: url('/img/20-min1mobile.jpeg');
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+  }
+}
+
+#start h1{
+  font-size: 4em;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px black;
+  font-family: sans-serif;
+}
+
+#start h2{
+  font-size: 3.5em;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px black;
+  font-family:  sans-serif;
+}
+
+#start hr{
+  color: white;
+  width: 70%;
+}
+
+@media only screen and (max-width: 900px){
+  #start h1{
+    font-size: 3.4em;
+  }
+  #start h2{
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 600px){
+#start h1{
+    font-size: 2.8em;
+  }
+#start h2{
+    font-size: 2.4em;
+  }
+}
+
+@media only screen and (max-width: 360px){
+#start h1{
+    font-size: 2.5em;
+}
+#start h2{
+    font-size: 2.2em;
+  }
+}
+
+
+/* DAS HAUS *******************************************/
+/*Card*/
+#cardDiv{
+  padding:0;
+  margin:0;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: auto;
+  font-family:  sans-serif;
+}
+
+.flexCard{
+  display: flex;
+  flex-direction: column;
+}
+
+div#cardDivText.container{
+  font-size: 1em;
+  line-height: 1.8em;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: left;
+}
+
+#dasHaus hr{
+  color: #ffeccc;
+}
+
+/*Pictures*/
+.flexedImgs{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0 -10px;
+  margin-top: -2vh;
+}
+
+#dasHaus img{
+  width: 18vw;
+  box-shadow: 12px 8px 15px #e0e0e0;
+  margin: 0 10px;
+  margin-top: 4vh;
+}
+
+
+ /* DASHAUSZWO *******************************************/
+ .collapsible-header{
+  background-color: rgb(0,150,136,0.9);
+  font-family:  sans-serif;
+  font-size: 1em;
+}
+
+.collapsible-body{
+  font-family:  sans-serif;
+  font-size: 1em;
+  line-height: 1.8em;
+}
+
+ .collapseImages{
+   height: 100%;
+   width: 100%;
+  /*box-shadow: 12px 8px 15px #e0e0e0; */
+   margin-top: 4vh;
+ }
+
+
+/* PREIS *******************************************/
+#Übernachtung{
+  font-size: 1.1em !important;
+  font-weight: bolder;
+}
+
+#preis{
+  background-color: rgba(230, 244, 241, 0.5);
+}
+
+#preis td{
+  font-family: sans-serif;
+  font-size: 1em;
+}
+
+#preis th{
+  border-bottom: 2px solid black;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+#tableDiv{
+  overflow-x: auto;
+}
+
+.striped{
+  background-color: #ffd740;
+}
+
+@media only screen and (max-width: 450px){
+  #Übernachtung{
+    font-size: 1.1em !important;
+    font-weight: bolder;
+  }
+
+  #preis{
+    background-color: rgba(230, 244, 241, 0.5);
+  }
+
+  #preis td{
+    font-family: sans-serif;
+    font-size: 1em;
+  }
+
+  #preis th{
+    font-size: 1.1em;
+  }
+  }
+
+/* KONTAKT *******************************************/
+#mymap{
+  height: 50vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+#iFrameMap{
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/*Contact*/
+#kontakt > div.container1{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  margin: 0 50px;
+}
+
+#kontakt label{
+  font-size: 1em;
+}
+
+#kontakt .btn{
+  text-transform: initial;
+  font-weight: bold;
+  padding: 0px 22px;
+  font-family: sans-serif;
+  font-size: 1.2em;
+}
+
+
+/* FOOTER *******************************************/
+
+.page-footer{
+  background-color: #03a9f4;
+  font-family: sans-serif;
+  padding: 50px 0 0;
+}
+
+.page-footer p{
+  font-size: 1em;
+  line-height: 1.8em;
+}
+
+.page-footer a{
+  font-size: 1em;
+  line-height: 2em;
+}
+
+.page-footer h5{
+  text-transform: uppercase;
+  font-size: 1.2em;
+}

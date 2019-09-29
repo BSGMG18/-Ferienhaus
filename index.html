@@ -1,31 +1,39 @@
 <!DOCTYPE html>
+
 <html id="myhtml" lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ferienhaus Jordanov</title>
+    <title>Havel Ferienhaus Brandenburg</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://bsgmg18.github.io/Ferienhaus/css/mycss.css"> 
+    <link rel="stylesheet" type="text/css" href="css/mycss.css"> 
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
 
-
 <body id="mybody">
+<!--
+    <div id="swiper" class="hideOnBigger900">
+        <img src="/img/Polygon2.svg">
+        <img src="/img/Polygon2.svg" style="opacity: 0.5;">
+        <img src="/img/Polygon2.svg" style="opacity: 0.25;">
+    </div>
+-->
     <header id="head hideOn922height">
         <div id="navbar" class="hideOnLess600 navbar-fixed">
             <nav>
                 <div class="nav-wrapper">
                     <div class="container">
-                        <a href="#!" class="brand-logo"><img id="logo" alt="" src="https://bsgmg18.github.io/Ferienhaus/img/havelferienhauslogo.svg" width="100" height="50"></a>
+                        <a href="#!" class="brand-logo"><img id="logo" alt="" src="img/havelferienhauslogo.svg" width="100" height="50"></a>
                         <a href="#" data-target="mobile-demo" class="sidenav-trigger">
                             <i class="material-icons">menu</i></a>
                         <ul class="right hide-on-med-and-down">
-                        <li><a href="#start" >Start</a></li>
-                        <li><a href="#dasHaus">Das Haus</a></li>
-                        <li><a href="#preis">Leistungen</a></li>
-                        <li><a href="#kontakt">Kontakt</a></li>
+                        <li><a id="1" href="#start" >Start</a></li>
+                        <li><a id="2" href="#dasHaus">Das Haus</a></li>
+                        <li><a id="3" href="#preis">Leistungen</a></li>
+                        <li><a id="4" href="#kontakt">Kontakt</a></li>
                         </ul>
                     </div>
                 </div>
@@ -35,7 +43,7 @@
             <nav>
                 <div class="nav-wrapper">
                     <div class="container">
-                        <a href="#!" class="brand-logo"><img id="logo" alt="" src="https://bsgmg18.github.io/Ferienhaus/img/havelferienhauslogo.svg" width="100" height="50"></a>
+                        <a href="#!" class="brand-logo"><img id="logo" alt="" src="img/havelferienhauslogo.svg" width="100" height="50"></a>
                         <a href="#" data-target="mobile-demo" class="sidenav-trigger">
                             <i class="material-icons">menu</i></a>
                         <ul class="right hide-on-med-and-down">
@@ -50,32 +58,28 @@
         </div>
             <ul class="sidenav" id="mobile-demo">
                 <li class="sidenav-header light-blue darken-1">
-                    <div class="row">
-                        <div class="col s12 m12 center user-view center-align">
-                            <a href="#start"><img id="mobile-logo" class="circle" src="https://bsgmg18.github.io/Ferienhaus/img/havelferienhauslogo.svg"></a>
-                        </div>
+                    <div class="row user-view">
                         <li class="white">
-                            <li>
+                            <li id="1-mobile">
                                 <a class="waves-effect" href="#start"><i class="material-icons" style="color:#039be5;">forward</i>Start</a>
                             </li>
                         </li>
                         <li class="white">
-                            <li>
+                            <li id="2-mobile">
                                 <a class="waves-effect" href="#dasHausZwo"><i class="material-icons" style="color:#009688;">home</i>Das Haus</a>
                             </li>
                         </li>
                         <li class="white">
-                            <li>
+                            <li id="3-mobile">
                                 <a class="waves-effect" href="#preis"><i class="material-icons" style="color:#ffd740;">view_list</i>Leistungen</a>
                             </li>
                         </li>
                         <li class="white">
-                            <li>
+                            <li id="4-mobile">
                                 <a class="waves-effect" href="#kontakt"><i class="material-icons">contacts</i>Kontakt</a>
-                            <li>
+                            </li>
                         <li>
                             <div class="divider">
-                                
                             </div>
                         </li>
                         <li>
@@ -83,124 +87,85 @@
                         </li>
                         <li>
                             <a class="waves-effect" href="https://www.stadt-brandenburg.de/stadt/sehenswertes/"><i class="material-icons">info_outline</i>Brandenburg an der Havel</a>
-                        </li> 
-                    </div> 
+                        </li>
+                    </div>
                 </li>
                 <li>
-                        <footer class="page-footer sidenav-footer">
-                                  
-                                <div class="footer-copyright">
-                                  <div class="container center-align">
-                                  © 2019 Havelferienhaus
-                                  </div>
-                                </div>
-                              </footer>
-                                
-                </li> 
-            </ul>  
+                    <footer class="page-footer sidenav-footer">
+                    </footer>
+                </li>
+            </ul>
     </header>
 
-<!-- 
-
-    <div class="fixed-action-btn hideOnBigger600">
-        <h6 id="kalenderText">Tragt euch in den Kalender ein!</h6>
-         <a id="floatingButton" href="https://calendar.google.com/calendar/embed?src=28q3hogtkcavbdp31g7176e128%40group.calendar.google.com&ctz=Europe%2FBerlin" class="btn-floating btn-large waves-effect waves-light">
-        <a id="floatingButton" href="https://calendar.google.com/calendar/embed?src=rau20mptrgqnt1cpktivit6dqc%40group.calendar.google.com&ctz=Europe%2FBerlin" class="btn-floating btn-large waves-effect waves-light">
-          <i class="large material-icons">event</i>
-        </a>
-      </div> -->
-      
-      
     <section id="start" class="valign-wrapper">
-        <div class="row outerDiv">
+        <div class="row divwidth100">
             <div class="container col s12 m10 l10 xl8">
                 <h1>Havel Ferienhaus</h1>
                 <hr>
                 <h2>Brandenburg</h2>
             </div>
-        </div>         
+        </div>
     </section>
 
     <div id="mobileDividerStartDasHaus"></div>
 
-    <section id="dasHaus" class="hideOn922height hideOnLess600">
+    <section id="dasHaus" class="hideOnLess900">
         <div class="row myRow">
             <div class="col s12 m6 l6 xl4">
                 <div class="container">
-                    <div id="cardDiv" class="card panel teal valign-wrapper">
+                    <div id="cardDiv" class="card panel teal flexCard">
                         <div id="cardDivText" class="container">
                             <span class="white-text">
-                                
-                                    &#11088 80 qm großes Ferienhaus<br>
-                                    &#11088 Terasse mit Sitzgruppe und Sonnenschirm <br>
-                                    &#11088 anschließender Garten mit Grillplatz<br>
+                                    <span class="Haus1">&#11088 80 qm großes Ferienhaus<br>
+                                    &#11088Terasse mit Sitzgruppe und Sonnenschirm<br>
+                                    &#11088 anschließender Garten mit Grillplatz<br></span>
                                     <hr>
-                                    &#11088 Wohnzimmer mit Essbereich und moderner offener Küche<br>
+                                    <span class="Haus2">&#11088 Wohnzimmer mit Essbereich und moderner offener Küche<br>
                                     &#11088 Herd, Kühlschrank/TK, Ofen, Geschirrspüler, Wasserkocher, Toaster, Kaffeemaschine, div. Geschirr<br>
-                                    &#11088 komfortable Schlafcouch für 2 Personen<br>
+                                    &#11088 komfortable Schlafcouch für 2 Personen<br></span>
                                     <hr>
-                                    &#11088 Schlafzimmer mit Doppelbett (180x200), bequem für 2 Personen<br>
-                                    &#11088 modernes Badezimmer mit Dusche Badewanne und WC<br>
-                                    &#11088 Hauswirtschaftsraum/ Abstellraum mit Waschmaschine und Staubsauger<br>
-                                
+                                    <span class="Haus3">&#11088 Schlafzimmer mit Doppelbett (180x200), bequem für 2 Personen<br>
+                                    &#11088modernes Badezimmer mit Dusche Badewanne und WC<br>
+                                    &#11088 Hauswirtschaftsraum/ Abstellraum mit Waschmaschine und Staubsauger<br></span>
                             </span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="pictureDiv" class="col s12 m6 l6 xl8  valign-wrapper">
-                <div class="outerDiv">
-                    <div class="row">
-                        <div class="col s8 m6 l8 xl4 tablet-margin">
-                            <img class="materialboxed hideOn922height"  src="https://bsgmg18.github.io/Ferienhaus/img/01-min.jpeg">
-                        </div>
-                        <div class="col s4 m6 l4 xl4 hideOn922height tablet-margin">
-                            <img class="materialboxed"  src="https://bsgmg18.github.io/Ferienhaus/img/22-min.jpeg">
-                        </div>
-                        <div class="col s4 m6 l4 xl4 hideOn922height tablet-margin">
-                            <img class="materialboxed"  src="https://bsgmg18.github.io/Ferienhaus/img/mg_9261-hdr-min.jpeg">
-                    </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s4 m6 l8 xl4 tablet-margin">
-                            <img class="materialboxed"  src="https://bsgmg18.github.io/Ferienhaus/img/07-min.jpeg">
-                        </div>
-                        <div class="col s4 m6 l4 xl4 tablet-margin">
-                            <img class="materialboxed"  src="https://bsgmg18.github.io/Ferienhaus/img/09-min.jpeg">
-                        </div>
-                        <div class="col s4 m6 offset-m6 l4 xl4 tablet-margin">
-                            <img class="materialboxed"  src="https://bsgmg18.github.io/Ferienhaus/img/08-min.jpeg">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s4 m6 offset-m6 l8 xl4 tablet-margin">
-                            <img class="materialboxed"  src="https://bsgmg18.github.io/Ferienhaus/img/14-min.jpeg">
-                        </div>
-                        <div class="col s4 m6 l4 xl4 tablet-margin">
-                            <img class="materialboxed"  src="https://bsgmg18.github.io/Ferienhaus/img/17-min.jpeg">
-                        </div>
-                        <div class="col s4 m6 l4 xl4 tablet-margin">
-                            <img class="materialboxed"  src="https://bsgmg18.github.io/Ferienhaus/img/18-min.jpeg">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s4 m6 offset-m6 l8 xl4 tablet-margin">
-                            <img class="materialboxed hideOnBigger600"  src="https://bsgmg18.github.io/Ferienhaus/img/02-min.jpeg">
-                        </div>
-                        <div class="col s4 m6 l4 xl4 tablet-margin">
-                            <img class="materialboxed hideOnBigger600"  src="https://bsgmg18.github.io/Ferienhaus/img/03-min.jpeg">
-                        </div>
-                        <div class="col s4 m6 l4 xl4 tablet-margin">
-                            <img class="materialboxed hideOnBigger600"  src="https://bsgmg18.github.io/Ferienhaus/img/16-min.jpeg">
-                        </div>
+            <div class="col s12 m6 l6 xl8 flexedImgs">
+                <div>
+                    <img class="materialboxed"  src="img/01-min.jpeg">
+                </div>
+                <div>
+                    <img class="materialboxed"  src="img/22-min.jpeg">
+                </div>
+                <div>
+                    <img class="materialboxed"  src="img/mg_9261-hdr-min.jpeg">
+                </div>
+                <div>
+                    <img class="materialboxed"  src="img/07-min.jpeg">
+                </div>
+                <div>
+                    <img class="materialboxed"  src="img/09-min.jpeg">
+                </div>
+                <div>
+                    <img class="materialboxed"  src="img/08-min.jpeg">
+                </div>
+                <div>
+                    <img class="materialboxed"  src="img/14-min.jpeg">
+                </div>
+                <div>
+                    <img class="materialboxed"  src="img/17-min.jpeg">
+                </div>
+                <div>
+                    <img class="materialboxed hideOnSmaller1200"  src="img/18-min.jpeg">
                 </div>
             </div>
-        </div>
     </section>
 
-    <section id="dasHausZwo" class="hideOnBigger600 hideOn922height valign-wrapper">
-        <div class="outerDiv">
-            <ul class="collapsible">
+    <section id="dasHausZwo" class="hideOnBigger900 valign-wrapper">
+        <div class="divwidth100">
+            <ul class="collapsible popout">
                 <li class="active">
                     <div class="collapsible-header waves-effect"><i class="material-icons">filter_vintage</i>Haus/Garten</div>
                     <div class="collapsible-body"><span>&#11088 80 qm großes Ferienhaus<br>
@@ -208,13 +173,13 @@
                         &#11088 anschließender Garten mit Grillplatz<br></span>
                         <div class="row">
                             <div class="col s4">
-                                <img class="materialboxed collapseImages" src="https://bsgmg18.github.io/Ferienhaus/img/01-min.jpeg">
+                                <img class="materialboxed collapseImages" src="img/01-min.jpeg">
                             </div>
                             <div class="col s4">
-                                <img class="materialboxed collapseImages" src="https://bsgmg18.github.io/Ferienhaus/img/22-min.jpeg">
+                                <img class="materialboxed collapseImages" src="img/22-min.jpeg">
                             </div>
                             <div class="col s4">
-                                <img class="materialboxed collapseImages" src="https://bsgmg18.github.io/Ferienhaus/img/mg_9261-hdr-min.jpeg">
+                                <img class="materialboxed collapseImages" src="img/mg_9261-hdr-min.jpeg">
                             </div>
                         </div>
                     </div>
@@ -225,13 +190,13 @@
                         &#11088 komfortable Schlafcouch für 2 Personen<br></span>
                         <div class="row">
                             <div class="col s4">
-                                <img class="materialboxed collapseImages" src="https://bsgmg18.github.io/Ferienhaus/img/08-min.jpeg">
+                                <img class="materialboxed collapseImages" src="img/08-min.jpeg">
                             </div>
                             <div class="col s4">
-                                <img class="materialboxed collapseImages" src="https://bsgmg18.github.io/Ferienhaus/img/04-min.jpeg">
+                                <img class="materialboxed collapseImages" src="img/04-min.jpeg">
                             </div>
                             <div class="col s4">
-                                <img class="materialboxed collapseImages" src="https://bsgmg18.github.io/Ferienhaus/img/05-min.jpeg">
+                                <img class="materialboxed collapseImages" src="img/05-min.jpeg">
                             </div>
                         </div>
                     </div>
@@ -242,13 +207,13 @@
                         </span>
                         <div class="row">
                             <div class="col s4">
-                                <img class="materialboxed collapseImages" src="https://bsgmg18.github.io/Ferienhaus/img/10-min.jpeg">
+                                <img class="materialboxed collapseImages" src="img/10-min.jpeg">
                             </div>
                             <div class="col s4">
-                                <img class="materialboxed collapseImages" src="https://bsgmg18.github.io/Ferienhaus/img/11-min.jpeg">
+                                <img class="materialboxed collapseImages" src="img/11-min.jpeg">
                             </div>
                             <div class="col s4">
-                                <img class="materialboxed collapseImages" src="https://bsgmg18.github.io/Ferienhaus/img/09-min.jpeg">
+                                <img class="materialboxed collapseImages" src="img/09-min.jpeg">
                             </div>
                         </div>
                     </div>
@@ -259,13 +224,13 @@
                             </span>
                             <div class="row">
                                 <div class="col s4">
-                                    <img class="materialboxed collapseImages" src="https://bsgmg18.github.io/Ferienhaus/img/14-min.jpeg">
+                                    <img class="materialboxed collapseImages" src="img/14-min.jpeg">
                                 </div>
                                 <div class="col s4">
-                                    <img class="materialboxed collapseImages" src="https://bsgmg18.github.io/Ferienhaus/img/15-min.jpeg">
+                                    <img class="materialboxed collapseImages" src="img/15-min.jpeg">
                                 </div>
                                 <div class="col s4">
-                                    <img class="materialboxed collapseImages" src="https://bsgmg18.github.io/Ferienhaus/img/16-min.jpeg">
+                                    <img class="materialboxed collapseImages" src="img/16-min.jpeg">
                                 </div>
                             </div>
                         </div>
@@ -276,24 +241,24 @@
                         &#11088 Hauswirtschaftsraum/ Abstellraum mit Waschmaschine und Staubsauger<br></span>
                         <div class="row">
                             <div class="col s4">
-                                <img class="materialboxed collapseImages" src="https://bsgmg18.github.io/Ferienhaus/img/17-min.jpeg">
+                                <img class="materialboxed collapseImages" src="img/17-min.jpeg">
                             </div>
                             <div class="col s4">
-                                <img class="materialboxed collapseImages" src="https://bsgmg18.github.io/Ferienhaus/img/18-min.jpeg">
+                                <img class="materialboxed collapseImages" src="img/18-min.jpeg">
                             </div>
                             <div class="col s4">
-                                <img class="materialboxed collapseImages" src="https://bsgmg18.github.io/Ferienhaus/img/mg_9134-hdr-min.jpeg">
+                                <img class="materialboxed collapseImages" src="img/mg_9134-hdr-min.jpeg">
                             </div>
                         </div>
                     </div>
                 </li>
             </ul>
         </div>
-    </section> 
+    </section>
 
 	<div id="mobileDividerPreisTop"></div>
 
-    <section id="preis" class="hideOn922height valign-wrapper">
+    <section id="preis" class=" valign-wrapper">
         <div id="tableDiv" class="container">
             <table class="striped">
                 <thead>
@@ -305,19 +270,17 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td rowspan="3">Übernachtung für bis zu 4 Personen</td>
-                        <td>95€/Nacht</td>
-                        <td>Mai - September</td>
+                        <td id="Übernachtung" rowspan="3">Übernachtung für bis zu 4 Personen</td>
+                        <td class="MaiBisSeptember">95€/Nacht</td>
+                        <td class="MaiBisSeptember">Mai - September</td>
                     </tr>
                     <tr>
-                            
-                            <td>80€/Nacht</td>
-                            <td>April - Oktober</td>
+                        <td class="AprilUndOktober">80€/Nacht</td>
+                        <td class="AprilUndOktober">April, Oktober</td>
                     </tr>
                     <tr>
-                            
-                            <td>70€/Nacht</td>
-                            <td>November - März</td>
+                        <td class="NovemberBisMärz">70€/Nacht</td>
+                        <td class="NovemberBisMärz">November - März</td>
                     </tr>
                     <tr>
                         <td>Bettwäsche, Handtücher und Seife</td>
@@ -325,9 +288,9 @@
                         <td></td>
                     </tr>
                     <tr>
-                            <td>Parken auf dem Grundstück</td>
-                            <td>inkl.</td>
-                            <td></td>
+                        <td>Parken auf dem Grundstück</td>
+                        <td>inkl.</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>Endreinigungsgebühr</td>
@@ -346,82 +309,71 @@
 
     <div id="mobileDividerPreisBottom"></div>
 
-    <section id="kontakt" class="hideOn922height">
+    <section id="kontakt">
         <div id="mymap">
             <iframe id="iFrameMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2431.6413612381493!2d12.53547701580485!3d52.44941117980106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd070b86f74ecb027!2sHavel+Ferienhaus+Brandenburg!5e0!3m2!1sde!2sde!4v1564989147229!5m2!1sde!2sde"></iframe>
         </div>
-
-        <div class="row myRow" style="min-height: 50vh;">
-                <div id="emailBackground" class="col s8 m8 l8 xl7">
-                    <div class="container">
-                    
-                    <p class="hideOn922height">Schreibt uns einen Brief!</p><h1 class="hideOn922height">&#x1F604</h1>
-                 <!--    <h3>Brielower Aue <span><h4>1k 14778</h4></span> Beetzsee</h3> -->
-                    
-                </div>
-                </div>
-                <div id="contactList" class="col s4 m4 l4 xl5 valign-wrapper">
+        <div class="container1">
+            <form action="./php/email.php" class="col s12" method="POST">
                     <div class="row">
-                        <div id="emailContact" class="col s12 m12 l12 xl4">
-                            <div id="myButton31">
-                                <button class="email waves-effect" onclick="location.href='mailto:havelferienhaus@gmail.com?subject=Havelferienhaus%20Brandenburg%20&amp;body=Hallo%20zusammen,%0D%0A%0D%0Aich%20würde%20gerne%20vom%20...%20bis%20zum%20...%20Ferien%20machen.';"><i class="material-icons">email</i></button>
-                            </div>
+                        <div class="input-field col s6">
+                            <input id="name" name="name" type="text" class="validate" required>
+                            <label for="name">Name</label>
                         </div>
-                        <div id="whatsAppContact" class="col s12 m12 l12 xl4">
-                            <div id="myButton21">
-                                <button class="whatsapp waves-effect" onclick="location.href='https://api.whatsapp.com/send?text=Hallo, ich würde gerne vom ... bis zum ... Ferien machen.&phone=+49 159 08691595';"><i id="whatsAppIcon" class="material-icons"><img id="whatsAppImage" src="https://bsgmg18.github.io/Ferienhaus//img/whatsapp1.png"></i></button>
-                            </div>
+                        <div class="input-field col s6">
+                            <input id="telefon" type="tel" name="telefon" class="validate" required>
+                            <label for="telefon">Telefon</label>
                         </div>
-                        <div id="phoneContact" class="col s12 m12 l12 xl4">
-                            <div id="myButton11">
-                                <button class="phone waves-effect" onclick="location.href='tel:+49 159 08691595';"><i class="material-icons">phone</i></button>
-                            </div>
+                        <div class="input-field col s12">
+                                <input id="email" name="email" type="email" class="validate" required>
+                                <label for="email">E-Mail Adresse</label>
                         </div>
+                        <div class="input-field col s6">
+                            <input id="von" name="von" type="text" class="datepicker" required>
+                            <label for="von">von</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="bis" name="bis" type="text" class="datepicker" required>
+                            <label for="bis">bis</label>
+                        </div>
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Senden
+                            <i class="material-icons right">send</i>
+                          </button>
                     </div>
-                </div>
-         </div>   
+                </form>
+        </div>
     </section>
 
     <footer class="page-footer">
-            <div class="container">
-              <div class="row">
-                <div class="col l6 s12">
-                  <h5 class="white-text">Kontaktieren Sie uns unter!</h5>
-                  <p class="grey-text text-lighten-4">
-                    <span style="color:#e0e0e0;">Telefon:</span> +49 157 58691595 <br>
-                    <span style="color:#e0e0e0;">E-Mail:</span>  havelferienhaus@gmail.com <br>
-                    <span style="color:#e0e0e0;">Adresse:</span>  Brielower Aue 1k 14778 Beetzsee</p>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                  <h5 class="white-text">Links</h5>
-                  <ul>
-                    <li><a class="grey-text text-lighten-3" href="#!">Impressum</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Datenschutz</a></li>
-                  </ul>
-                </div>
-              </div>
+        <div class="container">
+            <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Kontaktieren Sie uns unter!</h5>
+                <p class="grey-text text-lighten-4">
+                <span style="color:#e0e0e0;">Telefon:</span> +49 157 58691595 <br>
+                <span style="color:#e0e0e0;">E-Mail:</span>  havelferienhaus@gmail.com <br>
+                <span style="color:#e0e0e0;">Adresse:</span>  Brielower Aue 1k 14778 Beetzsee</p>
             </div>
-            <div class="footer-copyright">
-              <div class="container center-align">
-              © 2019 Havelferienhaus
-              </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Impressum</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Datenschutz</a></li>
+                </ul>
             </div>
-          </footer>
-            
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center-align">
+            © 2019 Havelferienhaus
+            </div>
+        </div>
+    </footer>
 
-
-    <!-- Compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://bsgmg18.github.io/Ferienhaus/js/myjs.js"></script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6p-qTeq21AJq_VfvIM_r2B5KAXazeRRk&callback=initMap">
-    </script>
-    <script async defer src="https://apis.google.com/js/api.js"
-    onload="this.onload=function(){};handleClientLoad()"
-    onreadystatechange="if (this.readyState === 'complete') this.onload()">
-    </script>
-
+    <script src="js/myjs.js"></script>
 
 </body>
 </html>
+
