@@ -59,14 +59,14 @@ section{
   }
 }
 
-@media only screen and (min-width: 900px){
-  .hideOnBigger900{
+@media only screen and (min-width: 1200px){
+  .hideOnBigger1200{
     display: none;
   }
 }
 
-@media only screen and (max-width: 900px){
-  .hideOnLess900{
+@media only screen and (max-width: 1200px){
+  .hideOnLess1200{
     display: none;
   }
 }
